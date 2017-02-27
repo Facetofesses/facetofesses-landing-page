@@ -4,13 +4,17 @@ export default class CurveEffect {
   constructor (options) {
     this.canvas = options.canvas
     this.context = options.context
+    this.type = options.type
     this.domElement = options.domElement
     this.colors = options.colors
 
     this.definePositionning()
     this.defineGradient()
     this.defineAnimatedPoints()
-    this.animatePoint()
+
+    if (this.domElement.classList.contains('header') || this.domElement.classList.contains('special-curve-effect')) {
+      this.animatePoint()
+    }
   }
 
   defineGradient () {
@@ -27,21 +31,25 @@ export default class CurveEffect {
 
   defineAnimatedPoints () {
     const width = this.canvas.getSize().width
-    const pointNumber = window.innerWidth < 790 ? 4 : 5
+    let moveY = randomInt(this.getPadding() - 20, this.getPadding())
 
-    this.animatedPoints = []
-
-    for (let i = width; i > width / pointNumber; i -= width / pointNumber) {
-      this.animatedPoints.push({
-        x: i,
-        y: this.domElementTop + this.domElement.offsetHeight
-      })
+    if (this.type === 'up') {
+      moveY *= -1
     }
 
-    this.animatedPoints.push({
+    this.animatedPoints = [{
+      x: width,
+      y: this.domElementTop + this.domElement.offsetHeight
+    }, {
+      x: width / 3 * 2,
+      y: this.domElementTop + this.domElement.offsetHeight + moveY
+    }, {
+      x: width / 3,
+      y: this.domElementTop + this.domElement.offsetHeight - moveY
+    }, {
       x: 0,
       y: this.domElementTop + this.domElement.offsetHeight
-    })
+    }]
   }
 
   animatePoint () {
@@ -52,7 +60,7 @@ export default class CurveEffect {
       TweenMax.staggerTo(this.animatedPoints, 3, {
         y: this.domElementTop + this.domElement.offsetHeight + moveY,
         ease: Linear.easeNone
-      }, 1)
+      }, 0.8)
     }, 3000)
   }
 

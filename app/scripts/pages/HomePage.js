@@ -32,6 +32,9 @@ export default class HomePage extends Page {
     this.background = new Background()
     this.animateTitle()
     this.background.start()
+    TweenMax.to('.header', 0.7, {
+      background: 'rgba(0, 0, 0, 0)'
+    })
   }
 
   animateTitle () {
