@@ -13,14 +13,14 @@
   <meta charset="UTF-8"/>
   <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
-  <meta name="theme-color" content="#F9F8F6"/>
+  <meta name="theme-color" content="#FFFFFF"/>
 
   <!--GENERAL INFORMATIONS-->
   <title>{{ title }}</title>
   <meta name="description" content="{{ meta_description }}"/>
   <meta name="mobile-web-app-capable" content="yes"/>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" href="{{ site.favicon | prepend: site.baseurl_image }}" />
+  <link rel="icon" href="{{ site.favicon | prepend: site.baseurl }}" />
 
   <!-- SEO -->
   <!-- OPENGRAPH -->
@@ -44,6 +44,15 @@
   <meta name="twitter:title" content="{{ page.title | escape }} | {{ site.title | escape }}"/>
   <meta name="twitter:description" content="{{ meta_description }}"/>
   <meta name="twitter:image" content="{{ share_image }}"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/app-icons/apple-touch-icon.png' | prepend: site.baseurl_image }}">
+  <link rel="icon" type="image/png" href="{{ '/app-icons/favicon-32x32.png' | prepend: site.baseurl_image }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ '/app-icons/favicon-16x16.png' | prepend: site.baseurl_image }}" sizes="16x16">
+  <link rel="manifest" href="{{ '/app-icons/manifest.json' | prepend: site.baseurl_image }}">
+  <link rel="mask-icon" href="{{ '/app-icons/safari-pinned-tab.svg' | prepend: site.baseurl_image }}">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-TileImage" content="{{ '/app-icons/mstile-144x144.png' | prepend: site.baseurl_image }}">
 
   {% if jekyll.environment == "production" %}
   <link rel="stylesheet" href="/assets/main.css">

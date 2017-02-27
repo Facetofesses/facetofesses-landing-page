@@ -18,9 +18,10 @@
   }
 
   &-loc {
+    position: relative;
     width: 100%;
     max-width: 700px;
-    margin: -100px auto 0;
+    z-index: 10;
 
     img {
       max-width: 100%;
