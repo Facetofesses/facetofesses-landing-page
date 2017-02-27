@@ -58,16 +58,15 @@ input {
 
 ::selection {
   background-color: #ffc066;
-  color: #469cff;
+  color: #104aff;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 0;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
