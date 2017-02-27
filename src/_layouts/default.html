@@ -6,9 +6,11 @@
   <body>
     {% include svg.html %}
 
+    {% include nav-lang.html %}
+
     <main id="barba-wrapper">
       {{ content }}
-      <div class="overflow-transition"></div>
+      <div class="lang-transition"></div>
     </main>
 
     {% if jekyll.environment == "production" %}

@@ -1,4 +1,5 @@
 import Barba from 'barba.js'
+import {selectClass} from './utils/index'
 
 const DEFAULT_OPTIONS = {
   cache: false,
@@ -72,10 +73,12 @@ export default class BarbaWrapper {
    * @param el element clicked
    */
   onBarbaLinkClicked (el) {
-    const transition = this.getActivePage().getTransition({
+    const transitionDatas = {
       el,
       datas: Object.assign({}, el.dataset)
-    }) || this.getDefaultTransition()
+    }
+
+    const transition = this.getActivePage().getTransition(transitionDatas) || this.getDefaultTransition(transitionDatas)
 
     Barba.Pjax.getTransition = () => {
       return Barba.BaseTransition.extend(transition)
@@ -96,25 +99,59 @@ export default class BarbaWrapper {
    *
    * @returns {{start: start, finish: finish}}
    */
-  getDefaultTransition () {
-    // Note : Do not use arrow function to keep Barba.BaseTransition context
-    return {
-      start: function () {
-        this.newContainerLoading
-          .then(this.transition.bind(this))
-      },
-      transition: function () {
-        new TimelineMax()
-          .to('.overflow-transition', 0.5, {width: window.innerWidth})
-          .set('.overflow-transition', {left: 0})
-          .set(this.oldContainer, {autoAlpha: 0})
-          .set(this.newContainer, {autoAlpha: 1})
-          .to('.overflow-transition', 0.5, {width: 0})
-          .set('.overflow-transition', {right: 0, left: 'auto'})
-          .call(() => {
-            this.done()
-          })
+  getDefaultTransition (options) {
+    switch (options.datas.transition) {
+      case 'to-lang': {
+        return {
+          start: function () {
+            this.newContainerLoading
+              .then(this.transition.bind(this))
+          },
+          transition: function () {
+            new TimelineMax()
+              .set('.lang-transition', {
+                webkitClipPath: `circle(0px at 100vw 0px)`
+              })
+              .to('.lang-transition', 1, {
+                webkitClipPath: `circle(${Math.sqrt(Math.pow(window.innerWidth, 2) + Math.pow(window.innerHeight, 2))}px at 100vw 0px)`,
+                ease: Power2.easeIn
+              })
+              .call(() => {
+                selectClass('nav-lang-item', true).forEach((el) => {
+                  el.classList.remove('active')
+                })
+                options.el.classList.add('active')
+              })
+              .set(this.oldContainer, {autoAlpha: 0})
+              .set(this.newContainer, {autoAlpha: 1})
+              .to('.lang-transition', 1, {
+                webkitClipPath: `circle(0px at 0px 100vh)`,
+                ease: Power2.easeOut
+              }, '+=0.3')
+              .set('.lang-transition', {
+                webkitClipPath: `circle(0px at 100vw 0px)`
+              })
+              .call(() => {
+                this.done()
+              })
+          }
+        }
       }
+      default:
+        return {
+          start: function () {
+            this.newContainerLoading
+              .then(this.transition.bind(this))
+          },
+          transition: function () {
+            new TimelineMax()
+              .set(this.oldContainer, {autoAlpha: 0})
+              .set(this.newContainer, {autoAlpha: 1})
+              .call(() => {
+                this.done()
+              })
+          }
+        }
     }
   }
 

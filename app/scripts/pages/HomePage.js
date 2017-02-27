@@ -10,8 +10,6 @@ export default class HomePage extends Page {
   constructor () {
     super()
     dbg('Init HomePage')
-
-    this.background = new Background()
   }
 
   initializeElements () {
@@ -27,7 +25,11 @@ export default class HomePage extends Page {
 
   onEnter () {
     super.onEnter()
+  }
 
+  onEnterCompleted () {
+    super.onEnterCompleted()
+    this.background = new Background()
     this.animateTitle()
     this.background.start()
   }
