@@ -20,6 +20,8 @@
   &-text {
     @include text();
     color: #242A2E;
+    max-width: 450px;
+    margin: 0 auto 15px;
   }
 
   &-item {
