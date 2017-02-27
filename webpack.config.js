@@ -27,7 +27,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'eslint',
-        exclude: [/node_modules/, './app/scripts/lib/**/*.js']
+        exclude: [/node_modules/, /scripts\/lib/]
       }
     ],
     loaders: [
@@ -44,7 +44,11 @@ module.exports = {
         test: /\.scss?$/,
         loader: ExtractTextPlugin.extract('css?sourceMap&-minimize!postcss!sass?sourceMap')
       },
-      {test: /\.(png|jpg)$/, loader: 'url?limit=8192'}
+      {test: /\.(png|jpg)$/, loader: 'url?limit=8192'},
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file?name=public/fonts/[name].[ext]'
+      }
     ]
   },
   plugins: [

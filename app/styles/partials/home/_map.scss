@@ -1,0 +1,41 @@
+.map {
+  position: relative;
+  text-align: center;
+
+  &-title {
+    @include title();
+  }
+
+  &-address {
+    @include text();
+    color: #242A2E;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .js-curve-effect:first-child {
+    padding: 50px 0;
+  }
+
+  &-loc {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: -100px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .special-curve-effect {
+    position: absolute;
+    bottom: 0;
+    height: 500px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

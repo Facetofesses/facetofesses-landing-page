@@ -1,0 +1,17 @@
+.context {
+
+  &-item {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include breakpoint-medium() {
+      padding: 50px;
+      text-align: left;
+    }
+
+    &-text {
+      @include text();
+    }
+  }
+}

@@ -2,8 +2,6 @@ import domReady from 'domready'
 import WebFont from 'webfontloader'
 import BarbaWrapper from './BarbaWrapper'
 import HomePage from './pages/HomePage'
-import PostPage from './pages/PostPage'
-import AboutPage from './pages/AboutPage'
 
 const DOM_READY_EVENT = 'dom-ready'
 const FONTS_READY_EVENT = 'fonts-ready'
@@ -26,12 +24,10 @@ export default class App {
     new BarbaWrapper({
       cache: false,
       prefetch: true,
-      navId: 'nav',
+      navId: null,
       refreshOnSameHrefClick: false
     })
       .match('HomePage', new HomePage())
-      .match('AboutPage', new AboutPage())
-      .match('PostPage', new PostPage())
       .start()
   }
 
@@ -54,8 +50,10 @@ export default class App {
     this.events.push(FONTS_READY_EVENT)
     WebFont.load({
       google: {
-        families: ['Montserrat:400,700'],
-        text: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ?!.,>%éèà1234567890'
+        families: ['Source Sans Pro:400']
+      },
+      custom: {
+        families: ['Blogger Sans']
       },
       classes: false,
       active: () => {

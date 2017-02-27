@@ -1,0 +1,25 @@
+.promise {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  &-text {
+    @include title();
+  }
+
+  &-link {
+    @include link();
+    display: inline;
+    box-shadow: inset 0 -10px 0 0 #FDCDF2, 0 5px 0 0 #FDCDF2;
+
+    @include breakpoint-medium() {
+      box-shadow: inset 0 -15px 0 0 #FDCDF2;
+    }
+
+    &-wrapper {
+      @include breakpoint-medium() {
+        padding: 0 90px;
+      }
+    }
+  }
+}

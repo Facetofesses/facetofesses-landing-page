@@ -1,0 +1,46 @@
+.social {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  &-title {
+    @include title();
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  &-media-item {
+    display: inline;
+    margin: 0 10px;
+
+    img {
+      height: 15px;
+      width: auto;
+
+      @include breakpoint-medium() {
+        height: auto;
+      }
+    }
+  }
+
+  &-partners-list {
+    position: relative;
+    margin-top: 60px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      width: 200px;
+      height: 1px;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &-partners-item {
+    display: inline;
+    margin: 0 15px;
+  }
+}

@@ -1,0 +1,64 @@
+.interactions {
+
+  .js-curve-effect:first-child {
+    padding-top: 50px;
+  }
+
+  &-title {
+    @include big-title();
+    text-align: center;
+    margin-bottom: 40px;
+    color: #242A2E;
+  }
+
+  .interaction-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include breakpoint-medium() {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &-title {
+      @include title();
+      margin-bottom: 10px;
+      text-align: center;
+
+      @include breakpoint-xsmall() {
+        text-align: left;
+      }
+    }
+
+    &-text {
+      @include text();
+      text-align: center;
+      margin-bottom: 20px;
+      color: #242A2E;
+
+      @include breakpoint-xsmall() {
+        text-align: left;
+      }
+    }
+
+    &-benefice {
+      @include text();
+      margin-bottom: 5px;
+      color: #242A2E;
+
+      &-pre {
+        position: relative;
+        @include sourceFont();
+        font-size: 16px;
+        color: #242A2E;
+        letter-spacing: 1.5px;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+
+      &-list {
+        padding: 5px 0;
+      }
+    }
+  }
+}

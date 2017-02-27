@@ -1,5 +1,8 @@
 import Page from './Page'
+import Background from '../Background'
 import {selectClass} from '../utils/index'
+import '../lib/splittext'
+import 'gsap/src/uncompressed/plugins/ScrollToPlugin'
 
 const dbg = debug('app:HomePage')
 
@@ -7,24 +10,42 @@ export default class HomePage extends Page {
   constructor () {
     super()
     dbg('Init HomePage')
+
+    this.background = new Background()
   }
 
   initializeElements () {
-    super.initializeElements()
-
     Object.assign(this.$els, {
-      myDiv: selectClass('whatever-you-want-in-this-page')
+      title: selectClass('header-title'),
+      scrollBtn: selectClass('header-scroll')
     })
+  }
+
+  initializeEvents () {
+    this.$els.scrollBtn.addEventListener('click', this.onScrollBtnClick.bind(this))
   }
 
   onEnter () {
     super.onEnter()
 
-    const intervalId = window.setInterval(() => {
-      console.log('I will be killed on page leave 😬')
-    }, 1000)
+    this.animateTitle()
+    this.background.start()
+  }
 
-    this.addSetInterval(intervalId)
+  animateTitle () {
+    const titleChars = new SplitText(this.$els.title, {type: 'lines'}).lines
+    TweenMax.staggerFrom(titleChars, 0.3, {
+      y: '+=20',
+      delay: 0.3,
+      autoAlpha: 0
+    }, 0.15)
+  }
+
+  onScrollBtnClick () {
+    TweenMax.to(window, 0.8, {
+      scrollTo: window.innerHeight,
+      ease: Power2.easeInOut
+    })
   }
 
   getTransition (options) {

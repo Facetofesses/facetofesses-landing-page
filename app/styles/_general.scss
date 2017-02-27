@@ -7,8 +7,21 @@
 }
 
 html, body {
-  font-family: Montserrat, sans-serif;
+  @include sourceFont();
   overflow-x: hidden;
+}
+
+article:after {
+  content: '';
+  position: absolute;
+  top: 100vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  opacity: 0.3;
+  pointer-events: none;
+  background: url(../../src/img/_commons/background.png);
 }
 
 a,
