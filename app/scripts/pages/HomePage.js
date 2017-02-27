@@ -43,7 +43,8 @@ export default class HomePage extends Page {
       y: '+=20',
       delay: 0.3,
       autoAlpha: 0
-    }, 0.15)
+    }, 0.3)
+    TweenMax.set(this.$els.title, {opacity: 1})
   }
 
   onScrollBtnClick (e) {
