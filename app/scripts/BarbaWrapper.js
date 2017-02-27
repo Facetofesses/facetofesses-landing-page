@@ -110,6 +110,7 @@ export default class BarbaWrapper {
           transition: function () {
             new TimelineMax()
               .set('.lang-transition', {
+                display: 'block',
                 webkitClipPath: `circle(0px at 100vw 0px)`
               })
               .to('.lang-transition', 1, {
@@ -129,6 +130,7 @@ export default class BarbaWrapper {
                 ease: Power2.easeOut
               }, '+=0.3')
               .set('.lang-transition', {
+                display: 'none',
                 webkitClipPath: `circle(0px at 100vw 0px)`
               })
               .call(() => {
