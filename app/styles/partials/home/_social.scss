@@ -16,6 +16,11 @@
     vertical-align: middle;
 
     svg {
+      fill: rgba(255, 255, 255, 0.6);
+      transition: fill 0.5s;
+    }
+
+    &:hover svg {
       fill: #FFFFFF;
     }
 
