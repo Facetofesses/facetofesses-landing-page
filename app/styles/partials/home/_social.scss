@@ -10,16 +10,28 @@
   }
 
   &-media-item {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
 
-    img {
-      height: 15px;
-      width: auto;
+    svg {
+      fill: #FFFFFF;
+    }
 
-      @include breakpoint-medium() {
-        height: auto;
-      }
+    &#facebook svg {
+      width: 16px;
+      height: 30px;
+    }
+
+    &#twitter svg {
+      width: 30px;
+      height: 24px;
+    }
+
+    &#mail svg {
+      width: 30px;
+      height: 20px;
     }
   }
 
@@ -35,12 +47,26 @@
       width: 200px;
       height: 1px;
       transform: translateX(-50%);
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.2);
     }
   }
 
   &-partners-item {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
+
+    svg {
+      fill: #FFFFFF;
+    }
+
+    &#cci svg {
+      width: 19px;
+      height: 20px;
+    }
+
+    &#gobelins svg {
+      width: 11px;
+      height: 20px;
+    }
   }
 }

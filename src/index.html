@@ -7,14 +7,18 @@ meta_description: ~
 ---
 
 <header class="header js-curve-effect" data-color-from="#4BD1A4" data-color-to="#5196D1">
-  <figure class="header-icon">
-    <img src="{{ '/logo.png' | prepend: site.baseurl_image }}" alt="">
-  </figure>
+  <div class="header-icon">
+    <svg>
+      <use xlink:href="#icon-logo"></use>
+    </svg>
+  </div>
   <h1 class="header-title">Et si l’éducation sexuelle était fun et interactive ?</h1>
 
-  <div class="header-scroll">
-    <img src="{{ '/scroll.png' | prepend: site.baseurl_image }}" alt="">
-  </div>
+  <a class="header-scroll" href="#">
+    <svg>
+      <use xlink:href="#icon-scroll"></use>
+    </svg>
+  </a>
 </header>
 
 <section class="context container">
@@ -46,13 +50,13 @@ meta_description: ~
     <div class="description-item col-12 col-md-5">
       <h2 class="description-title">Une exposition interactive, itinérante et personnalisée</h2>
       <figure class="description-image hidden-md-up">
-        <img src="{{ '/illus-bus.png' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/illus-bus.png' | prepend: site.baseurl_image }}" alt="Illustration du bus">
       </figure>
       <p class="description-text">Itinérante parce que l’exposition se veut accessible au plus grand nombre ! Pendant un an le bus Face to Fesse partira à la rencontre des adolescents dans toute la France et fera étape une semaine par ville.Lorsqu’il pénètre à l’intérieur du bus, l’adolescent découvre un parcours immersif, composé de sept ateliers interactifs. Cependant, ce n’est pas une simple exposition interactive, puisque le parcours s’adaptee à l’utilisateur, afin de donner une dimension plus personnelle à l’expérience et de répondre au mieux à ses appréhensions. Car nous n’avons pas tous les mêmes !</p>
     </div>
     <div class="col-md-7 hidden-md-down">
       <figure class="description-image right-image">
-        <img src="{{ '/illus-bus.png' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/illus-bus.png' | prepend: site.baseurl_image }}" alt="Illustration du bus">
       </figure>
     </div>
   </div>
@@ -60,13 +64,13 @@ meta_description: ~
   <div class="row js-curve-effect" data-color-from="#98ADFE" data-color-to="#5195D1">
     <div class="col-md-7 hidden-md-down">
       <figure class="description-image left-image">
-        <img src="{{ '/illus-parcours-bus.png' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/illus-parcours-bus.png' | prepend: site.baseurl_image }}" alt="Illustration du parcours du bus">
       </figure>
     </div>
     <div class="description-item col-12 col-md-5">
       <h2 class="description-title">Un parcours narratif complet</h2>
       <figure class="description-image hidden-md-up">
-        <img src="{{ '/illus-parcours-bus.png' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/illus-parcours-bus.png' | prepend: site.baseurl_image }}" alt="Illustration du parcours du bus">
       </figure>
       <p class="description-text"> Cependant, pour mener à bien leurs projets, il leur faut un expert-cambrioleur, et Gandalf leur a recommandé Bilbo. Celui-ci est plus que réticent à l’idée de partir à l’aventure, mais il finit par accompagner la troupe.En chemin pour les Montagnes de Brume (Monts Brumeux), la compagnie est capturée par trois trolls et ne s’en sort que grâce à l’astuce de Gandalf. Le magicien, connaissant le point faible de ces créatures, les distrait jusqu’à l’aube, moment où ils se transforment en pierre sous l’effet de la lumière du soleil.</p>
     </div>
@@ -176,7 +180,7 @@ meta_description: ~
   <div class="row about-list js-curve-effect" data-color-from="#FC6269" data-color-to="#FDA571">
     <div class="about-item col-6 col-md-3">
       <figure class="about-item-image">
-        <img src="{{ '/jade.jpg' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/jade.jpg' | prepend: site.baseurl_image }}" alt="photo de profil de Jade">
       </figure>
       <p class="about-item-name">Jade Impedovo</p>
       <p class="about-item-job">Conceptrice</p>
@@ -184,7 +188,7 @@ meta_description: ~
 
     <div class="about-item col-6 col-md-3">
       <figure class="about-item-image">
-        <img src="{{ '/quentin.jpg' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/quentin.jpg' | prepend: site.baseurl_image }}" alt="photo de profil de Quentin">
       </figure>
       <p class="about-item-name">Quentin Neyraud</p>
       <p class="about-item-job">Directeur technique</p>
@@ -192,7 +196,7 @@ meta_description: ~
 
     <div class="about-item col-6 col-md-3">
       <figure class="about-item-image">
-        <img src="{{ '/florian.jpg' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/florian.jpg' | prepend: site.baseurl_image }}" alt="photo de profil de Florian">
       </figure>
       <p class="about-item-name">Florian Petit</p>
       <p class="about-item-job">Directeur artistique</p>
@@ -200,7 +204,7 @@ meta_description: ~
 
     <div class="about-item col-6 col-md-3">
       <figure class="about-item-image">
-        <img src="{{ '/remy.jpg' | prepend: site.baseurl_image }}" alt="">
+        <img src="{{ '/remy.jpg' | prepend: site.baseurl_image }}" alt="photo de profil de Rémy">
       </figure>
       <p class="about-item-name">Rémy Sclippa</p>
       <p class="about-item-job">Chef de projet</p>
@@ -218,30 +222,46 @@ meta_description: ~
   <div class="js-curve-effect special-curve-effect" data-color-from="#4BD1A4" data-color-to="#5196D1"></div>
 
   <figure class="map-loc">
-    <img src="{{ '/map.png' | prepend: site.baseurl_image }}" alt="">
+    <img src="{{ '/map.png' | prepend: site.baseurl_image }}" alt="carte localisant le projet Face to Fesses">
   </figure>
 </section>
 
 <section class="social container js-curve-effect" data-color-from="#242A2E" data-color-to="#242A2E">
   <p class="social-title">Devenez fan !</p>
   <ul class="social-media-list">
-    <li class="social-media-item">
-      <a href="https://www.facebook.com/FaceToFesses/" target="_blank"><img src="{{ '/facebook.png' | prepend: site.baseurl_image }}" alt=""></a>
+    <li class="social-media-item" id="facebook">
+      <a href="https://www.facebook.com/FaceToFesses/" target="_blank">
+        <svg>
+          <use xlink:href="#icon-facebook"></use>
+        </svg>
+      </a>
     </li>
-    <li class="social-media-item">
-      <a href="https://twitter.com/FaceToFesses" target="_blank"><img src="{{ '/twitter.png' | prepend: site.baseurl_image }}" alt=""></a>
+    <li class="social-media-item" id="twitter">
+      <a href="https://twitter.com/FaceToFesses" target="_blank">
+        <svg>
+          <use xlink:href="#icon-twitter"></use>
+        </svg>
+      </a>
     </li>
-    <li class="social-media-item">
-      <a href="mailto:contact@facetofesse.fr"><img src="{{ '/mail.png' | prepend: site.baseurl_image }}" alt=""></a>
+    <li class="social-media-item" id="mail">
+      <a href="mailto:contact@facetofesse.fr">
+        <svg>
+          <use xlink:href="#icon-mail"></use>
+        </svg>
+      </a>
     </li>
   </ul>
 
   <ul class="social-partners-list">
-    <li class="social-partners-item">
-      <img src="{{ '/gobelins.png' | prepend: site.baseurl_image }}" alt="">
+    <li class="social-partners-item" id="gobelins">
+      <svg>
+        <use xlink:href="#icon-gobelins"></use>
+      </svg>
     </li>
-    <li class="social-partners-item">
-      <img src="{{ '/cci.png' | prepend: site.baseurl_image }}" alt="">
+    <li class="social-partners-item" id="cci">
+      <svg>
+        <use xlink:href="#icon-cci"></use>
+      </svg>
     </li>
   </ul>
 </section>

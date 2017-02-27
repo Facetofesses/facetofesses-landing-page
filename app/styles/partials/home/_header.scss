@@ -21,6 +21,12 @@
   &-icon {
     display: inline-block;
     margin-top: 70px;
+
+    svg {
+      fill: #FFFFFF;
+      width: 113px;
+      height: 60px;
+    }
   }
 
   &-title {
@@ -43,10 +49,13 @@
     bottom: 30px;
     transform: translateX(-50%);
     cursor: pointer;
+    padding: 10px;
 
-    img {
+    svg {
+      fill: #FFFFFF;
       width: 14px;
-      height: auto;
+      height: 32px;
+      pointer-events: none;
 
       animation: bounce 2s $easeInOutCirc infinite;
     }
