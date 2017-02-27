@@ -55,13 +55,15 @@ export default class CurveEffect {
   animatePoint () {
     window.setInterval(() => {
       const padding = this.getPadding()
-      const moveY = randomInt(0, padding) * randomSign()
+      const moveY = randomInt(padding - 20, padding) * randomSign()
 
-      TweenMax.staggerTo(this.animatedPoints, 3, {
+      const point = [this.animatedPoints[1], this.animatedPoints[2]]
+
+      TweenMax.staggerTo(point, 1.5, {
         y: this.domElementTop + this.domElement.offsetHeight + moveY,
         ease: Linear.easeNone
-      }, 0.8)
-    }, 3000)
+      }, 1)
+    }, 1400)
   }
 
   definePositionning () {
