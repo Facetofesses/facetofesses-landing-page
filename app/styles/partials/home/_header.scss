@@ -30,9 +30,10 @@
   }
 
   &-title {
+    position: relative;
     margin: 0 auto;
-
     margin-top: 100px;
+    z-index: 2;
 
     text-align: center;
     @include big-title();
