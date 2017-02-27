@@ -20,7 +20,7 @@ canvas {
   right: 0;
   z-index: 500;
   clip-path: circle(0px at 100vw 0);
-  background-color: rgba(253, 165, 113, 1);
+  background: linear-gradient(45deg, #FC6269, #FDA571);
 
   &.step1 {
     clip-path: circle(200vw at 100vw 0);
