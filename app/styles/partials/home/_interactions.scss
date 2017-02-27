@@ -75,14 +75,32 @@
       margin-bottom: 5px;
       color: #242A2E;
 
+      &-wrapper {
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: -25px;
+          left: -55px;
+          fill: #4BD1A4;
+          width: 40px;
+          height: 50px;
+
+          &.is-white {
+            fill: #FFFFFF;
+          }
+        }
+      }
+
       &-pre {
         position: relative;
         @include sourceFont();
-        font-size: 16px;
+        font-size: 18px;
         color: #242A2E;
         letter-spacing: 1.5px;
         line-height: 20px;
         text-transform: uppercase;
+        margin-bottom: 10px;
       }
 
       &-list {

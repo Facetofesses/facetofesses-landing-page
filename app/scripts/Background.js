@@ -28,6 +28,7 @@ export default class Background {
       const curveEffect = new CurveEffect({
         canvas: this.canvas,
         context: this.canvasCtx,
+        type: el.getAttribute('data-type'),
         domElement: el,
         colors: [el.getAttribute('data-color-from'), el.getAttribute('data-color-to')]
       })
