@@ -1,15 +1,15 @@
 # Site settings
-title: Jekyll starter
+title: Face to fesses
 baseurl: ""
 baseurl_image: "/img"
-url: "http://jekyll-starter.quentinneyraud.fr"
+url: "http://facetofesse.fr"
 
 # SEO & head
-twitter_username: "@quentin_neyraud"
+twitter_username: "@FaceToFesses"
 twitter_creator: "@quentin_neyraud"
-meta_description: "Jekyll starter is a simple Jekyll project using Barba.js to provide page transition without reload. It also supports Sass & ES6, bundled with Webpack."
+meta_description: "Face to fesses est un projet ayant pour but de dissiper les craintes des adolescents à l'approche de leur première fois."
 share_image: "/share-image.png"
-favicon: "/favicon.ico"
+favicon: "/favicon.png"
 
 # Build settings
 markdown: kramdown
