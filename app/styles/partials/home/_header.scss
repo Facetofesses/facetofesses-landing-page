@@ -51,6 +51,8 @@
     transform: translateX(-50%);
     cursor: pointer;
     padding: 10px;
+    display: inline-block;
+    z-index: 5;
 
     svg {
       fill: #FFFFFF;
