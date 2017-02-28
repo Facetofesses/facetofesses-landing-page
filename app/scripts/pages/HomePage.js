@@ -43,13 +43,14 @@ export default class HomePage extends Page {
       y: '+=20',
       delay: 0.3,
       autoAlpha: 0
-    }, 0.15)
+    }, 0.3)
+    TweenMax.set(this.$els.title, {opacity: 1})
   }
 
   onScrollBtnClick (e) {
     e.preventDefault()
     TweenMax.to(window, 0.8, {
-      scrollTo: window.innerHeight,
+      scrollTo: selectClass('header').offsetHeight,
       ease: Power2.easeInOut
     })
   }

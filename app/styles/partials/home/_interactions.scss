@@ -1,5 +1,9 @@
 .interactions {
 
+  .row {
+    justify-content: center;
+  }
+
   .js-curve-effect {
     padding: 50px 0;
 
@@ -15,9 +19,44 @@
     color: #242A2E;
   }
 
+
+  .interaction-path {
+    position: relative;
+
+    &-img {
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+
+      @include breakpoint-medium() {
+        bottom: 50px;
+
+        &-top {
+          bottom: auto;
+          top: 15px;
+        }
+      }
+    }
+  }
+
   .interaction-item {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include breakpoint-medium() {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+      // Interaction path on the right
+    & + .interaction-path .interaction-path-img {
+      right: auto;
+      left: 40px;
+
+      &.l-0 {
+        left: 0;
+      }
+    }
 
     &-title {
       @include title();
@@ -47,17 +86,30 @@
 
       &-wrapper {
         position: relative;
+        padding-left: 40px;
 
         svg {
           position: absolute;
-          top: -25px;
-          left: -55px;
-          fill: #4BD1A4;
+          top: -4px;
+          left: -10px;
+          fill: #4bd1a4;
           width: 40px;
-          height: 50px;
+          height: 40px;
 
-          &.is-white {
-            fill: #FFFFFF;
+          &.is-white,
+          &.is-white svg {
+            fill: white;
+          }
+        }
+
+        @include breakpoint-small() {
+          padding-left: 0;
+
+          svg {
+            top: -25px;
+            left: -55px;
+            width: 40px;
+            height: 50px;
           }
         }
       }

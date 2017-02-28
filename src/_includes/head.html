@@ -5,7 +5,7 @@
 {% capture meta_description %}{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.meta_description }}{% endif %}{% endcapture %}
 {% assign meta_description = meta_description | strip_html | strip_newlines | truncate: 160 %}
 
-{% assign title = page.title | escape | append: ' | ' | append: site.title | escape %}
+{% if page.title %}{% assign title = page.title | escape | append: ' | ' | append: site.title | escape %}{% else %}{% assign title = site.title | escape %}{% endif %}
 {% endstrip %}
 <head>
 
@@ -37,7 +37,7 @@
   <meta itemprop="image" content="{{ share_image }}"/>
 
   <!-- TWITTER -->
-  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="{{ site.twitter_username }}"/>
   <meta name="twitter:creator" content="{{ site.twitter_creator }}"/>
   <meta name="twitter:url" content="{{ site.url }}"/>

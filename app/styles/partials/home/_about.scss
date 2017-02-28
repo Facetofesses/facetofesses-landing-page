@@ -60,5 +60,20 @@
       @include text();
       color: #FFFFFF;
     }
+
+    &-social {
+      margin-top: 10px;
+
+      li {
+        display: inline-block;
+        margin: 0 8px;
+      }
+
+      svg {
+        height: 25px;
+        width: 25px;
+        fill: #fff;
+      }
+    }
   }
 }

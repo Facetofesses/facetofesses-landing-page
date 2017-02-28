@@ -107,11 +107,6 @@
     font-size: 16px;
     line-height: 24px;
   }
-
-  @include breakpoint-small() {
-    font-size: 18px;
-    line-height: 26px;
-  }
 }
 
 @mixin link() {

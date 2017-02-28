@@ -22,6 +22,11 @@
     margin-bottom: 20px;
     height: auto;
 
+    img {
+      width: 100%;
+      height: auto;
+    }
+
     @include breakpoint-medium() {
       padding: 30px;
       position: absolute;
@@ -33,11 +38,11 @@
       &.left-image img {
         float: right;
       }
-    }
 
-    img {
-      height: 100%;
-      width: auto;
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
   }
 
@@ -45,5 +50,29 @@
     @include text();
     color: #242A2E;
     margin-bottom: 15px;
+  }
+
+  &-list {
+    @include clearfix;
+
+    &-item {
+      float: left;
+      @include sourceFont();
+      font-size: 18px;
+      color: #242A2E;
+      letter-spacing: 1.5px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      margin-right: 30px;
+
+      span {
+        @include bloggerSansBold();
+        font-weight: 600;
+        color: #fff;
+        margin-right: 10px;
+        font-size: 25px;
+      }
+    }
   }
 }

@@ -32,6 +32,7 @@
   }
 
   &-title {
+    opacity: 0;
     position: relative;
     margin: 0 auto;
     margin-top: 100px;
@@ -40,7 +41,7 @@
     text-align: center;
     @include big-title();
 
-    @include breakpoint-medium() {
+    @include breakpoint-small() {
       position: absolute;
       max-width: 800px;
       margin-top: 0;
@@ -59,14 +60,13 @@
     padding: 10px;
     display: inline-block;
     z-index: 5;
+    animation: bounce 2s $easeInOutCirc infinite;
 
     svg {
       fill: #FFFFFF;
       width: 14px;
       height: 32px;
       pointer-events: none;
-
-      animation: bounce 2s $easeInOutCirc infinite;
     }
   }
 }
