@@ -1,7 +1,7 @@
 .nav-lang {
   position: absolute;
-  top: 50px;
-  right: 60px;
+  top: 20px;
+  right: 20px;
   z-index: 5;
 
   &-item {
@@ -33,5 +33,10 @@
       @include text();
       font-weight: bold;
     }
+  }
+
+  @include breakpoint-medium() {
+    top: 40px;
+    right: 40px;
   }
 }
