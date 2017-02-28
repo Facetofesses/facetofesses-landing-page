@@ -1,0 +1,322 @@
+---
+layout: page
+namespace: Home
+---
+
+<header class="header js-curve-effect" data-color-from="#4BD1A4" data-color-to="#5196D1" data-type="up">
+  <div class="header-icon">
+    <svg>
+      <use xlink:href="#icon-logo"></use>
+    </svg>
+  </div>
+  <h1 class="header-title">{{ page.header.title }}</h1>
+
+  <a class="header-scroll" href="#">
+    <svg>
+      <use xlink:href="#icon-scroll"></use>
+    </svg>
+  </a>
+</header>
+
+<section class="context container">
+  <div class="row js-curve-effect" data-color-from="#7C52B5" data-color-to="#7C52B5" data-type="down">
+    <div class="context-item col-12 col-sm-8 push-sm-4 col-md-7 push-md-5 col-lg-5 push-lg-7">
+      <p class="context-item-text">{{ page.context.first }}</p>
+    </div>
+  </div>
+  <div class="row js-curve-effect" data-color-from="#FDA571" data-color-to="#FFF870" data-type="up">
+    <div class="context-item col-12 col-sm-8 col-md-7 col-lg-5">
+      <p class="context-item-text c-black">{{ page.context.second }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="promise container js-curve-effect" data-color-from="#FFFFFF" data-color-to="#FFFFFF" data-type="down">
+  <div class="row">
+    <div class="col-12 col-sm-8 push-sm-4">
+      <p class="promise-text">{{ page.promise.text }}</p>
+      <div class="promise-link-wrapper">
+        <p class="promise-link">{{ page.promise.link }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="description container">
+  <div class="row js-curve-effect" data-color-from="#A874DE" data-color-to="#F9A0D6" data-type="up">
+    <div class="description-item col-12 col-md-10 push-md-1 col-lg-6 push-lg-0">
+      <h2 class="description-title">{{ page.description.first.title }}</h2>
+      <figure class="description-image hidden-lg-up">
+        <img src="{{ '/illus-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.first.image_tag }}">
+      </figure>
+      <ul class="description-list">
+        <li class="description-list-item"><span>1</span>bus</li>
+        <li class="description-list-item"><span>1</span>an</li>
+        <li class="description-list-item"><span>1</span>semaine/ville</li>
+      </ul>
+      <p class="description-text">{{ page.description.first.text }}</p>
+    </div>
+    <div class="col-md-6 hidden-md-down">
+      <figure class="description-image right-image">
+        <img src="{{ '/illus-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.first.image_tag }}">
+      </figure>
+    </div>
+  </div>
+
+  <div class="row js-curve-effect" data-color-from="#98ADFE" data-color-to="#5195D1" data-type="down">
+    <div class="col-md-10 push-md-1 col-lg-6 push-lg-0 hidden-md-down">
+      <figure class="description-image left-image">
+        <img src="{{ '/illus-parcours-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.second.image_tag }}">
+      </figure>
+    </div>
+    <div class="description-item col-12 col-md-10 push-md-1 col-lg-6 push-lg-0">
+      <h2 class="description-title">{{ page.description.second.title }}</h2>
+      <figure class="description-image hidden-lg-up">
+        <img src="{{ '/illus-parcours-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.second.image_tag }}">
+      </figure>
+      <p class="description-text">{{ page.description.second.text }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="interactions container">
+  <div class="js-curve-effect" data-color-from="#FFFFFF" data-color-to="#FFFFFF" data-type="up">
+    <h2 class="interactions-title">Le parcours</h2>
+
+    <div class="row">
+      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+        <p class="interaction-item-title">{{ page.interactions.first.title }}</p>
+        <p class="interaction-item-text">{{ page.interactions.first.text }}</p>
+        <div class="interaction-item-benefice-wrapper">
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <svg>
+            <use xlink:href="#icon-thumbs"></use>
+          </svg>
+          <ul class="interaction-item-benefice-list">
+            {% for benefice in page.interactions.first.benefices %}
+              <li class="interaction-item-benefice">{{ benefice }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
+        <img class="interaction-path-img l-0" src="{{ '/sperm-1.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="interaction-path col-sm-4 col-md-6 col-lg-5 hidden-sm-down">
+        <img class="interaction-path-img" src="{{ '/sperm-2.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+        <p class="interaction-item-title">{{ page.interactions.second.title }}</p>
+        <p class="interaction-item-text">{{ page.interactions.second.text }}</p>
+        <div class="interaction-item-benefice-wrapper">
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <svg>
+            <use xlink:href="#icon-thumbs"></use>
+          </svg>
+          <ul class="interaction-item-benefice-list">
+            {% for benefice in page.interactions.second.benefices %}
+            <li class="interaction-item-benefice">{{ benefice }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+        <p class="interaction-item-title">{{ page.interactions.third.title }}</p>
+        <p class="interaction-item-text">{{ page.interactions.third.text }}</p>
+        <div class="interaction-item-benefice-wrapper">
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <svg>
+            <use xlink:href="#icon-thumbs"></use>
+          </svg>
+          <ul class="interaction-item-benefice-list">
+            {% for benefice in page.interactions.third.benefices %}
+            <li class="interaction-item-benefice">{{ benefice }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
+        <img class="interaction-path-img interaction-path-img-top" src="{{ '/sperm-3.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="row js-curve-effect" data-color-from="#A874DE" data-color-to="#F9A0D6" data-type="down">
+    <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
+      <img class="interaction-path-img" src="{{ '/sperm-4.png' | prepend: site.baseurl_image }}" alt="">
+    </div>
+    <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+      <p class="interaction-item-title">{{ page.interactions.fourth.title }}</p>
+      <p class="interaction-item-text">{{ page.interactions.fourth.text }}</p>
+      <div class="interaction-item-benefice-wrapper">
+        <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+        <svg class="is-white">
+          <use xlink:href="#icon-thumbs"></use>
+        </svg>
+        <ul class="interaction-item-benefice-list">
+          {% for benefice in page.interactions.fourth.benefices %}
+          <li class="interaction-item-benefice">{{ benefice }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row js-curve-effect" data-color-from="#4BD1A4" data-color-to="#4BD1A4" data-type="up">
+    <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+      <p class="interaction-item-title">{{ page.interactions.fifth.title }}</p>
+      <p class="interaction-item-text">{{ page.interactions.fifth.text }}</p>
+      <div class="interaction-item-benefice-wrapper">
+        <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+        <svg class="is-white">
+          <use xlink:href="#icon-thumbs"></use>
+        </svg>
+        <ul class="interaction-item-benefice-list">
+          {% for benefice in page.interactions.fifth.benefices %}
+          <li class="interaction-item-benefice">{{ benefice }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
+      <img class="interaction-path-img interaction-path-img-top" src="{{ '/sperm-5.png' | prepend: site.baseurl_image }}" alt="">
+    </div>
+  </div>
+
+  <div class="js-curve-effect" data-color-from="#FFFFFF" data-color-to="#FFFFFF" data-type="down">
+    <div class="row">
+      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
+        <img class="interaction-path-img" src="{{ '/sperm-6.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+        <p class="interaction-item-title">{{ page.interactions.sixth.title }}</p>
+        <p class="interaction-item-text">{{ page.interactions.sixth.text }}</p>
+        <p class="interaction-item-text">{{ page.interactions.sixth.text_second }}</p>
+        <div class="interaction-item-benefice-wrapper">
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <svg>
+            <use xlink:href="#icon-thumbs"></use>
+          </svg>
+          <ul class="interaction-item-benefice-list">
+            {% for benefice in page.interactions.sixth.benefices %}
+            <li class="interaction-item-benefice">{{ benefice }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+        <p class="interaction-item-title">{{ page.interactions.seventh.title }}</p>
+        <p class="interaction-item-text">{{ page.interactions.seventh.text }}</p>
+        <div class="interaction-item-benefice-wrapper">
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <svg>
+            <use xlink:href="#icon-thumbs"></use>
+          </svg>
+          <ul class="interaction-item-benefice-list">
+            {% for benefice in page.interactions.seventh.benefices %}
+            <li class="interaction-item-benefice">{{ benefice }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="interaction-path col-sm-4 col-md-6 col-lg-2"></div>
+    </div>
+  </div>
+
+</section>
+
+<section class="about container">
+  <div class="js-curve-effect" data-color-from="#6FC2EF" data-color-to="#6FC2EF" data-type="up">
+    <h2 class="about-title">{{ page.about.title }}</h2>
+    <p class="about-text">{{ page.about.text }}</p>
+  </div>
+  <div class="row about-list js-curve-effect" data-color-from="#FC6269" data-color-to="#FDA571" data-type="down">
+
+    {% for p in page.about.people %}
+    <div class="about-item col-6 col-md-3">
+      <figure class="about-item-image">
+        <img src="{{ p.image_src | prepend: site.baseurl_image }}" alt="{{ p.image_alt }}">
+      </figure>
+      <p class="about-item-name">{{ p.name }}</p>
+      <p class="about-item-job">{{ p.job }}</p>
+      <ul class="about-item-social">
+        {% for benefice in page.about.people.benefices %}
+        <li>
+          <a href="{{ benefice.url }}" target="_blank">
+            <svg>
+              <use xlink:href="#icon-{{ benefice.icon }}"></use>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+
+</section>
+
+<section class="map container">
+  <div class="js-curve-effect" data-color-from="#FFFFFF" data-color-to="#FFFFFF" data-type="up">
+    <p class="map-title">{{ page.map.title }}</p>
+    <p class="map-address">{{ page.map.address }}</p>
+  </div>
+
+  <div class="js-curve-effect special-curve-effect" data-color-from="#4BD1A4" data-color-to="#5196D1" data-type="down"></div>
+
+  <figure class="map-loc">
+    <img src="{{ '/map.png' | prepend: site.baseurl_image }}" alt="{{ page.map.image_alt }}">
+  </figure>
+</section>
+
+<section class="social container js-curve-effect" data-color-from="#242A2E" data-color-to="#242A2E" data-type="up">
+  <p class="social-title">{{ page.social.title }}</p>
+  <ul class="social-media-list">
+    <li class="social-media-item" id="facebook">
+      <a href="https://www.facebook.com/FaceToFesses/" target="_blank">
+        <svg>
+          <use xlink:href="#icon-facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-media-item" id="twitter">
+      <a href="https://twitter.com/FaceToFesses" target="_blank">
+        <svg>
+          <use xlink:href="#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-media-item" id="mail">
+      <a href="mailto:contact@facetofesse.fr">
+        <svg>
+          <use xlink:href="#icon-mail"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="social-partners-list">
+    <li class="social-partners-item" id="gobelins">
+      <svg>
+        <use xlink:href="#icon-gobelins"></use>
+      </svg>
+    </li>
+    <li class="social-partners-item" id="cci">
+      <svg>
+        <use xlink:href="#icon-cci"></use>
+      </svg>
+    </li>
+  </ul>
+</section>
+
+<canvas id="canvas"></canvas>
