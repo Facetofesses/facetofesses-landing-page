@@ -60,14 +60,13 @@
     padding: 10px;
     display: inline-block;
     z-index: 5;
+    animation: bounce 2s $easeInOutCirc infinite;
 
     svg {
       fill: #FFFFFF;
       width: 14px;
       height: 32px;
       pointer-events: none;
-
-      animation: bounce 2s $easeInOutCirc infinite;
     }
   }
 }
