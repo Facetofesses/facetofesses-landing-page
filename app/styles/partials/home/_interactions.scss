@@ -25,8 +25,17 @@
 
     &-img {
       position: absolute;
-      bottom: 50px;
+      bottom: 20px;
       right: 40px;
+
+      @include breakpoint-medium() {
+        bottom: 50px;
+
+        &-top {
+          bottom: auto;
+          top: 15px;
+        }
+      }
     }
   }
 

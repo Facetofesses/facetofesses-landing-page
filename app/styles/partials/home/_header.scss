@@ -41,7 +41,7 @@
     text-align: center;
     @include big-title();
 
-    @include breakpoint-medium() {
+    @include breakpoint-small() {
       position: absolute;
       max-width: 800px;
       margin-top: 0;
