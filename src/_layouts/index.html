@@ -50,9 +50,9 @@ namespace: Home
         <img src="{{ '/illus-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.first.image_tag }}">
       </figure>
       <ul class="description-list">
-        <li class="description-list-item"><span>1</span>bus</li>
-        <li class="description-list-item"><span>1</span>an</li>
-        <li class="description-list-item"><span>1</span>semaine/ville</li>
+        {% for v in page.description.first.values %}
+        <li class="description-list-item"><span>{{ v.value }}</span>{{ v.label }}</li>
+        {% endfor %}
       </ul>
       <p class="description-text">{{ page.description.first.text }}</p>
     </div>
@@ -81,7 +81,7 @@ namespace: Home
 
 <section class="interactions container">
   <div class="js-curve-effect" data-color-from="#FFFFFF" data-color-to="#FFFFFF" data-type="up">
-    <h2 class="interactions-title">Le parcours</h2>
+    <h2 class="interactions-title">{{ page.interactions.title }}</h2>
 
     <div class="row">
       <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
@@ -250,11 +250,11 @@ namespace: Home
       <p class="about-item-name">{{ p.name }}</p>
       <p class="about-item-job">{{ p.job }}</p>
       <ul class="about-item-social">
-        {% for benefice in page.about.people.benefices %}
+        {% for social in p.social %}
         <li>
-          <a href="{{ benefice.url }}" target="_blank">
+          <a href="{{ social.url }}" target="_blank">
             <svg>
-              <use xlink:href="#icon-{{ benefice.icon }}"></use>
+              <use xlink:href="#icon-{{ social.icon }}"></use>
             </svg>
           </a>
         </li>
@@ -274,9 +274,11 @@ namespace: Home
 
   <div class="js-curve-effect special-curve-effect" data-color-from="#4BD1A4" data-color-to="#5196D1" data-type="down"></div>
 
-  <figure class="map-loc">
-    <img src="{{ '/map.png' | prepend: site.baseurl_image }}" alt="{{ page.map.image_alt }}">
-  </figure>
+  <a href="https://goo.gl/maps/jCF4nyViyzA2" target="_blank" class="map-link">
+    <figure class="map-loc">
+      <img src="{{ '/map.png' | prepend: site.baseurl_image }}" alt="{{ page.map.image_alt }}">
+    </figure>
+  </a>
 </section>
 
 <section class="social container js-curve-effect" data-color-from="#242A2E" data-color-to="#242A2E" data-type="up">

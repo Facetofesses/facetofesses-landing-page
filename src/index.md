@@ -17,12 +17,19 @@ description:
     title: Une exposition interactive, itinérante et personnalisée
     image_alt: Illustration du bus
     text: Lorsqu’il pénètre à l’intérieur du bus, l’adolescent découvre un parcours immersif, composé de sept ateliers interactifs. Cependant, ce n’est pas une simple exposition interactive, puisque le parcours s’adaptee à l’utilisateur, afin de donner une dimension plus personnelle à l’expérience et de répondre au mieux à ses appréhensions. Car nous n’avons pas tous les mêmes !
+    values:
+      - value: 1
+        label: bus
+      - value: 1
+        label: an
+      - value: 1
+        label: ville/semaine
   second:
     title: Un parcours narratif complet
     image_alt: Illustration du parcours du bus
     text: Le parcours s’effectue en compagnie de Gaïa, la mascotte numérique de Face to Fesses, une sorte de grande soeur bienveillante. Sa voix décomplexée, enjouée et taquine accompagne l’adolescent et lui apporte un complément d’information, toujours avec humour.
 interactions:
-  title:
+  title: Le parcours
   first:
     title: Hey toi, là-bas !
     text: Lorsqu’un adolescent passe devant le bus, il est interpellé par Gaïa qui est présente sur un grand écran à l’extérieur du bus. Elle lui pose une question sur la première fois et l’invite à pénétrer à l’intérieur.
