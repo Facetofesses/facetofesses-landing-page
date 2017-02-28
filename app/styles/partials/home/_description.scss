@@ -51,4 +51,28 @@
     color: #242A2E;
     margin-bottom: 15px;
   }
+
+  &-list {
+    @include clearfix;
+
+    &-item {
+      float: left;
+      @include sourceFont();
+      font-size: 18px;
+      color: #242A2E;
+      letter-spacing: 1.5px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      margin-right: 30px;
+
+      span {
+        @include bloggerSansBold();
+        font-weight: 600;
+        color: #fff;
+        margin-right: 10px;
+        font-size: 25px;
+      }
+    }
+  }
 }
