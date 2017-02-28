@@ -96,8 +96,9 @@
           width: 40px;
           height: 40px;
 
-          &.is-white {
-            fill: #FFFFFF;
+          &.is-white,
+          &.is-white svg {
+            fill: white;
           }
         }
 
