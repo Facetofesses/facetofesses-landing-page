@@ -50,7 +50,7 @@ export default class HomePage extends Page {
   onScrollBtnClick (e) {
     e.preventDefault()
     TweenMax.to(window, 0.8, {
-      scrollTo: window.innerHeight,
+      scrollTo: selectClass('header').offsetHeight,
       ease: Power2.easeInOut
     })
   }
