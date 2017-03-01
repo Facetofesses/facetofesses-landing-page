@@ -100,6 +100,7 @@ export default class BarbaWrapper {
    * @returns {{start: start, finish: finish}}
    */
   getDefaultTransition (options) {
+    const that = this
     switch (options.datas.transition) {
       case 'to-lang': {
         return {
@@ -135,6 +136,7 @@ export default class BarbaWrapper {
               })
               .call(() => {
                 this.done()
+                that.getActivePage().onEnter()
               })
           }
         }
