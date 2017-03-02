@@ -16,7 +16,7 @@ description:
   first:
     title: Une exposition interactive, itinérante et personnalisée
     image_alt: Illustration du bus
-    text: Lorsqu’il pénètre à l’intérieur du bus, l’adolescent découvre un parcours immersif, composé de sept ateliers interactifs. Cependant, ce n’est pas une simple exposition interactive, puisque le parcours s’adaptee à l’utilisateur, afin de donner une dimension plus personnelle à l’expérience et de répondre au mieux à ses appréhensions. Car nous n’avons pas tous les mêmes !
+    text: Lorsqu’il pénètre à l’intérieur du bus, l’adolescent découvre un parcours immersif, composé de sept ateliers interactifs. Cependant, ce n’est pas une simple exposition interactive, puisque le parcours s’adapte à l’utilisateur, afin de donner une dimension plus personnelle à l’expérience et de répondre au mieux à ses appréhensions. Car nous n’avons pas tous les mêmes !
     values:
       - value: 1
         label: bus
