@@ -7,7 +7,7 @@ meta_description: ~
 header:
   title: 'Et si l’éducation sexuelle était fun et interactive&nbsp;?'
 context:
-  first: L’éducation sexuelle, telle que proposée dans les collèges et lycées francais, est barbante, incomplète et désuète face au monde dans lequel nous vivons aujourd’hui. Un monde où la sexualité est exacerbée et les adolescents sont en moyenne confronté à leur première image pornographique à 11 ans !
+  first: L’éducation sexuelle, telle que proposée dans les collèges et lycées francais, est barbante, incomplète et désuète face au monde dans lequel nous vivons aujourd’hui. Un monde où la sexualité est exacerbée et les adolescents sont en moyenne confrontés à leur première image pornographique à 11 ans !
   second: L'expérience Face to Fesses aborde de manière concrète et sans tabou les mystères du premier rapport sexuel, sous le prisme du plaisir et du respect. C’est le sujet qui préoccupe le plus les ados et nous souhaitons leur permettre d’aborder sereinement leur vie sexuelle.
 promise:
   text: Face to Fesses accompagne les adolescents dans la découverte de leur sexualité 
@@ -55,7 +55,7 @@ interactions:
       - Préliminaires ?! Jamais entendu parler…
   fifth:
     title: Sors le parapluie
-    text: Le plus excitant vient de se dérouler, il est maintenant temps de passer à l’acte ! Enfin, pas tout à fait. On peut attraper des IST autant qu’on peut en refourguer. Cet atelier invite l’utilisateur à enfiler des préservatifs féminin et masculin à l’aveugle dans une boîte noire. 
+    text: Le plus excitant vient de se dérouler, il est maintenant temps de passer à l’acte ! Enfin, pas tout à fait. On peut attraper des IST autant qu’on peut en transmettre. Cet atelier invite l’utilisateur à enfiler des préservatifs féminins et masculins à l’aveugle dans une boîte noire. 
     benefices:
       - J’ai peur de ne pas arriver à enfiler un préservatif le moment venu.
       - Comment faire si la capote craque ?
