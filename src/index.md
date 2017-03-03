@@ -36,7 +36,7 @@ interactions:
     benefices:
       - Je n’ose pas en parler
   second:
-    title: L’esprît tranquille
+    title: L’esprit tranquille
     text: Une fois dans le bus, Gaïa accompagne l’adolescent. Elle lui présente dans les grandes lignes le thème de cette expérience puis lui propose de se détendre en reproduisant une posture de yoga. Il doit la tenir au moins 15 secondes. Ensuite, pour personnaliser son expérience, il renseigne quelques informations.
     benefices:
       - Je ne sais pas si je suis prêt.
