@@ -58,20 +58,20 @@
 
   &-partners-item {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
 
     svg {
-      fill: #FFFFFF;
+      fill: rgba(#fff, 0.4);
     }
 
     &#cci svg {
-      width: 19px;
-      height: 20px;
+      width: 92px;
+      height: 30px;
     }
 
     &#gobelins svg {
-      width: 11px;
-      height: 20px;
+      width: 20px;
+      height: 30px;
     }
   }
 }

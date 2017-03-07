@@ -75,7 +75,7 @@ export default class BarbaWrapper {
   onBarbaLinkClicked (el) {
     const transitionDatas = {
       el,
-      datas: Object.assign({}, el.dataset)
+      datas: el.dataset
     }
 
     const transition = this.getActivePage().getTransition(transitionDatas) || this.getDefaultTransition(transitionDatas)

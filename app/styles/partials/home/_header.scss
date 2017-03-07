@@ -6,7 +6,7 @@
   text-align: center;
   padding: 0 30px;
   z-index: 4;
-  background: linear-gradient(45deg, #4BD1A4, #5196D1);
+  background: linear-gradient(-45deg, #5196D1, #4BD1A4);
 
   &:after {
     content: '';
@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     bottom: 50px;
-    z-index: 1;
+    z-index: -1;
     background: url(../../src/img/_commons/header_background.png) no-repeat;
     @include background-cover();
   }
@@ -44,7 +44,8 @@
     @include breakpoint-small() {
       position: absolute;
       max-width: 800px;
-      margin-top: 0;
+      width: 80%;
+      margin-top: 25px;
       top: 50%;
       left: 50%;
       transform: translate3d(-50%, -50%, 0);

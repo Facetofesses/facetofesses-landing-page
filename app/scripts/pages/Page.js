@@ -20,11 +20,12 @@ export default class Page {
 
   onEnter () {
     this.active = true
+  }
+
+  onEnterCompleted () {
     this.initializeElements()
     this.initializeEvents()
   }
-
-  onEnterCompleted () {}
 
   onLeave () {
     this.active = false

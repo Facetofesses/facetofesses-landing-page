@@ -1,19 +1,15 @@
 @font-face {
   font-family: 'Blogger Sans';
-  src: url('../fonts/BloggerSans.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/BloggerSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/BloggerSans.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/BloggerSans.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/BloggerSans.svg') format('svg'); /* Legacy iOS */
+  src: url('../fonts/blogger_sans.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/blogger_sans.woff2') format('woff2'), /* Pretty Modern Browsers */
+  url('../fonts/blogger_sans.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'Blogger Sans';
-  src: url('../fonts/BloggerSans-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/BloggerSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/BloggerSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/BloggerSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/BloggerSans-Bold.svg') format('svg'); /* Legacy iOS */
+  src: url('../fonts/blogger_sans-bold.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/blogger_sans-bold.woff2') format('woff2'), /* Pretty Modern Browsers */
+  url('../fonts/blogger_sans-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @mixin sourceFont() {
