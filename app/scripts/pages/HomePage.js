@@ -37,6 +37,10 @@ export default class HomePage extends Page {
     })
   }
 
+  onLeave () {
+    this.background.destruct()
+  }
+
   animateTitle () {
     const titleChars = new SplitText(this.$els.title, {type: 'lines'}).lines
     TweenMax.staggerFrom(titleChars, 0.3, {

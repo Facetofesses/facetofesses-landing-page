@@ -7,6 +7,7 @@ export default class Background {
   constructor () {
     this.canvas = new Canvas()
     this.canvasCtx = this.canvas.getContext()
+    this.rafId = null
 
     window.addEventListener('resize', this.onResize.bind(this))
   }
@@ -14,6 +15,10 @@ export default class Background {
   start () {
     this.define()
     this.loop()
+  }
+
+  destruct () {
+    cancelAnimationFrame(this.rafId)
   }
 
   onResize () {
@@ -58,6 +63,6 @@ export default class Background {
     this.update()
     this.render()
 
-    Raf(this.loop.bind(this))
+    this.rafId = Raf(this.loop.bind(this))
   }
 }
