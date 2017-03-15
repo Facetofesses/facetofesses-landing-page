@@ -29,6 +29,10 @@ export default class App {
     })
       .match('HomePage', new HomePage())
       .start()
+
+    TweenMax.to('.loader', 0.5, {
+      autoAlpha: 0
+    })
   }
 
   /**
