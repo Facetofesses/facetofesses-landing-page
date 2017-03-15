@@ -8,14 +8,8 @@ export default class Background {
     this.canvas = new Canvas()
     this.canvasCtx = this.canvas.getContext()
     this.rafId = null
-    this.scroll = 0
 
     window.addEventListener('resize', this.onResize.bind(this))
-    /* window.addEventListener('scroll', () => {
-      TweenMax.to(this, 0.2, {
-        scroll: window.scrollY
-      })
-    }) */
   }
 
   start () {
@@ -58,7 +52,7 @@ export default class Background {
 
   render () {
     this.canvas.clear()
-    // this.canvasCtx.setTransform(1, 0, 0, 1, 0, -this.scroll)
+    this.canvasCtx.setTransform(1, 0, 0, 1, 0, -window.scrollY)
 
     this.curveEffects.forEach((curveEffect) => {
       curveEffect.render()
