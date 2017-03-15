@@ -16,7 +16,7 @@ description:
   first:
     title: Une exposition interactive, itinérante et personnalisée
     image_alt: Illustration du bus
-    text: Lorsqu’il pénètre à l’intérieur du bus, l’adolescent découvre un parcours immersif, composé de sept ateliers interactifs. Cependant, ce n’est pas une simple exposition interactive, puisque le parcours s’adapte à l’utilisateur, afin de donner une dimension plus personnelle à l’expérience et de répondre au mieux à ses appréhensions. Car nous n’avons pas tous les mêmes !
+    text: Lorsqu’il pénètre à l’intérieur du bus, l’adolescent découvre un parcours immersif, composé de huit ateliers interactifs. Cependant, ce n’est pas une simple exposition interactive, puisque le parcours s’adapte à l’utilisateur, afin de donner une dimension plus personnelle à l’expérience et de répondre au mieux à ses appréhensions. Car nous n’avons pas tous les mêmes !
     values:
       - value: 1
         label: bus
@@ -47,20 +47,26 @@ interactions:
       - J’ai peur de ne pas être un bon coup.
       - Comment va réagir mon partenaire en me voyant nu•e ?
   fourth:
+    title: Permis du plaisir
+    text: Sur le principe de l’épreuve du code la route, l’ado doit répondre à une flopée de situations de consentement dans un temps imparti. Muni de deux buzzers, il devra faire son choix le plus rapidement possible. S’il n’atteint pas le score maximum, il doit repasser le test, avec de nouvelles situations. Et ainsi de suite jusqu’à faire un sans faute. Pas de permis, pas de plaisir !
+    benefices:
+      - Et si je n’en ai pas envie
+      - Il / elle ne veut pas / plus le faire
+  fifth:
     title: Ô ? Ah ! Oulala…
     text: Face à lui se trouve différents modules 3D représentant des parties érogènes du corps. Il doit toucher, palper, pincer, caresser pour produire une réaction (changement de lumière, de musique dans le bus, accélération d’un battement de coeur en fond sonore...). Conclusion, il faut écouter son corps et celui de l’autre, se détendre, se laisser aller. Le plaisir sera à la clé !
     benefices:
       - Est-ce que je vais prendre du plaisir ?
       - Est-ce que je vais donner du plaisir ?
       - Préliminaires ?! Jamais entendu parler…
-  fifth:
+  sixth:
     title: Sors le parapluie
     text: Le plus excitant vient de se dérouler, il est maintenant temps de passer à l’acte ! Enfin, pas tout à fait. On peut attraper des IST autant qu’on peut en transmettre. Cet atelier invite l’utilisateur à enfiler des préservatifs féminins et masculins à l’aveugle dans une boîte noire. 
     benefices:
       - J’ai peur de ne pas arriver à enfiler un préservatif le moment venu.
       - Comment faire si la capote craque ?
       - Quelle protection utiliser ?
-  sixth:
+  seventh:
     title: L’acte
     text: Dans cet atelier, l’adolescent doit écouter son partenaire et faire en sorte que l’acte se passe le mieux possible en paramétrant les facteurs qui entrent en compte. Le contrôle s’effectue via des pastilles à déposer sur l’écran.
     text_second: En pivotant ces pastilles, il va pouvoir alterner la vitesse du rapport, changer de position, ajouter une caresse, il peut même arrêter complètement la relation en retirant les pastilles. En face de lui un hologramme suggère ce qu’il se passe sous la couette.
@@ -68,7 +74,7 @@ interactions:
       - Est-ce que je vais faire/avoir mal ?
       - Et si je jouis trop vite ?
       - Est-ce que je dois lui parler, pendant ?
-  seventh:
+  eighth:
     title: Les témoignages
     text: "Une fois sorti du bus, l’ado peut découvrir un mur de témoignages audio. On lui fournit un casque qu’il peut connecter à n’importe quelle sortie audio et ainsi entendre des témoignages de personnes racontant le déroulé de leur première fois. Les enregistrements ont différentes teneurs : drôle, romantique, dramatique, insignifiante... Car il n’y a pas deux première fois identiques."
     benefices:

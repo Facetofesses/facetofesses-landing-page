@@ -16,7 +16,7 @@ description:
   first:
     title: An itinerant, interactive and customized exhibition
     image_alt: Outside of the bus illustration
-    text: Itinerant because we want the exhibition to be accessible to the greatest possible number of people! For a year, the bus will go on French roads meeting teenagers during weekly stops in towns. When the user gets into the bus, he discovers an immersive seven workshops pathway. However, this is not just a simple interactive exhibit. In order to give a more personal dimension to the experience and answer as best as possible to the user's apprehensions, we customize the workshops according to the informations he gave us. Because we do not all have the same apprehensions when it comes to sex.
+    text: Itinerant because we want the exhibition to be accessible to the greatest possible number of people! For a year, the bus will go on French roads meeting teenagers during weekly stops in towns. When the user gets into the bus, he discovers an immersive eight workshops pathway. However, this is not just a simple interactive exhibit. In order to give a more personal dimension to the experience and answer as best as possible to the user's apprehensions, we customize the workshops according to the informations he gave us. Because we do not all have the same apprehensions when it comes to sex.
     values:
       - value: 1
         label: bus
@@ -47,20 +47,26 @@ interactions:
       - Be a good lay
       - How is my partner gonna react when he’ll see me naked?
   fourth:
+    title: Pleasure licence
+    text: 'In the same way as a driving theory test, the user should answer to a serie of consent situations in a limited time. With two buzzers, he has to choose the right answer as fast as possible. If he does not answer all situations right, he should take the consent theory test again, with new situations. On and on, until he succeed faultlessly. No license, no pleasure!'
+    benefices:
+      - What if I don’t want to do it ?
+      - He/she doesn't want to do it anymore
+  fifth:
     title: Ô? Ah! Oulala...
     text: 3D models are facing the user, it is representing erogenous body areas. The user has to touch, feel, pinch to make the environment react to those stimuli (light changing, music, heart beat speed...). Conclusion, listen to your body and your partner’s, relax, take it easy. The pleasure is the key!
     benefices:
       - Am I going to feel pleasure?
       - Will I be able to give pleasure?
       - Foreplay?! Never heard of that…
-  fifth:
+  sixth:
     title: Stay protected
     text: The most excited part just happened, it’s now time to do it! Not right now, actually. You can have STD as much as you can give STD. This workshop gives the opportunity to practice the use of women and men condoms, with 3D models. The practice takes place in a black box, where the user puts his hands, and practices without seeing anything.
     benefices:
       - I fear I can’t put the condom right.
       - What if the condom drill?
       - What kind of protection I should use?
-  sixth:
+  seventh:
     title: The moment
     text: In this workshop, the teenager has to listen his partner and make everything go as fine as possible, by adjusting factors. When he lays on a screen different factor pellets, he can control the action.
     text_second: By rotating the pellets, the user can alternate the speed of the action, change position, add caresses or stop the entire experiment by pulling out the pellets. The user is facing an hologram which suggest what’s happening under the bedsheets.
@@ -68,7 +74,7 @@ interactions:
       - Will I hurt / have pain?
       - What if it comes too fast?
       - Should we speak during?
-  seventh:
+  eighth:
     title: Testimonials
     text: "One out of the bus, the teenager will discover an audio testimonials wall. We give him a headset and he can plug-it into various audio outputs and ear other people’s anecdotes about their first time. Audio records are of many kinds : funny, romantic, dramatic, insignificant… Because there isn’t two identical first time."
     benefices:
