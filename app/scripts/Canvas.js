@@ -15,8 +15,13 @@ export default class Canvas {
   }
 
   setSize () {
+    let body = document.body
+    let html = document.documentElement
+
+    let height = Math.max(body.scrollHeight, body.offsetHeight,
+      html.clientHeight, html.scrollHeight, html.offsetHeight)
     this.domElement.width = window.innerWidth
-    this.domElement.height = window.innerHeight
+    this.domElement.height = height
   }
 
   getSize () {
