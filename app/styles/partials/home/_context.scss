@@ -10,12 +10,13 @@
       text-align: left;
     }
 
-    &-light &-text {
-      color: #000;
-    }
-
     &-text {
       @include text();
+    }
+
+    &-icon {
+      width: 200px;
+      fill: #A874DE;
     }
   }
 }

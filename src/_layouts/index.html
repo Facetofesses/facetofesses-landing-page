@@ -20,13 +20,26 @@ namespace: Home
 
 <section class="context container">
   <div class="row js-curve-effect" data-color-from="#7C52B5" data-color-to="#7C52B5" data-type="down">
-    <div class="context-item col-12 col-sm-8 push-sm-4 col-md-7 push-md-5 col-lg-5 push-lg-7">
-      <p class="context-item-text">{{ page.context.first }}</p>
+    <div class="row">
+      <div class="context-item col-12 col-sm-10 col-md-8 col-lg-7 offset-lg-1">
+        <svg class="context-item-icon mr-3 float-left"><use xlink:href="#icon-picto-college"></use></svg>
+        <p class="context-item-text">{{ page.context.first }}</p>
+      </div>
     </div>
-  </div>
-  <div class="row js-curve-effect" data-color-from="#FDA571" data-color-to="#FFF870" data-type="up">
-    <div class="context-item col-12 col-sm-8 col-md-7 col-lg-5">
-      <p class="context-item-text c-black">{{ page.context.second }}</p>
+
+    <div class="row w-100">
+      <div class="col-md-10 offset-md-1">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="1080" height="720" src="https://www.youtube.com/embed/y13HO1C-LtI" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="context-item col-12 col-sm-10 offset-sm-2 col-md-8 offset-md-4 col-lg-7 offset-lg-4">
+        <svg class="context-item-icon ml-3 float-right"><use xlink:href="#icon-picto-bus"></use></svg>
+        <p class="context-item-text">{{ page.context.second }}</p>
+      </div>
     </div>
   </div>
 </section>
