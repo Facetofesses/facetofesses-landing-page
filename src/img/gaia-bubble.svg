@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="214px" height="169px" viewBox="0 0 214 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M56.0220743,77.0971655 C56.1836681,74.4302287 57.5282036,62.8626656 68.7153605,55 C69.3019214,63.6909831 71.484367,67.4172678 72.6355581,68.8062868 C80.4765754,66.4012922 91.0108179,64.4515324 104.691049,63.2546672 C127.163152,61.288613 170.521609,63.872149 172.707062,88.8681608 C174.477367,109.119007 144.661478,124.002177 108.865243,127.133942 C90.6161824,128.730528 47.7074688,124.502657 45.2438258,100.546774 C43.9969129,88.420548 49.8123027,81.7073875 56.0220743,77.0971655 Z" id="path-1"></path>
+        <filter x="-47.0%" y="-82.8%" width="194.0%" height="265.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.141176471   0 0 0 0 0.164705882   0 0 0 0 0.180392157  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="01_website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ftf-website" transform="translate(-393.000000, -4007.000000)">
+            <g id="Parcours-narratif" transform="translate(270.000000, 3690.000000)">
+                <g id="info">
+                    <g id="Group" transform="translate(126.000000, 320.000000)">
+                        <g id="bubble">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="eh-ouais" transform="translate(109.185486, 92.732395) rotate(-5.000000) translate(-109.185486, -92.732395) " font-family="ReklameScript-Medium, Reklame Script" font-size="30" font-weight="400" letter-spacing="1" fill="#98ADFE">
+                            <tspan x="59.685486" y="103.232395">eh ouai</tspan>
+                            <tspan x="147.149353" y="103.232395">s</tspan>
+                        </text>
+                        <g id="gaia">
+                            <path d="M117.168844,29.29412 C117.168844,29.29412 111.203764,25.10012 100.894073,24.86432 C90.5843819,24.62852 85.2187657,28.83092 85.2187657,28.83092" id="Stroke-1" stroke="#242A2E" stroke-width="4" stroke-linecap="round"></path>
+                            <path d="M39.6167688,24.94432 C39.6167688,30.46712 35.1395688,34.94432 29.6167688,34.94432 C24.0939688,34.94432 19.6167688,30.46712 19.6167688,24.94432 C19.6167688,19.42152 24.0939688,14.94432 29.6167688,14.94432 C35.1395688,14.94432 39.6167688,19.42152 39.6167688,24.94432" id="Fill-3" fill="#242A2E"></path>
+                            <path d="M0.0998040562,5.70154 C0.0998040562,5.70154 10.1668743,0.09994 26.385932,0.09994 C42.6049897,0.09994 52.6720599,5.70154 52.6720599,5.70154" id="Stroke-5" stroke="#242A2E" stroke-width="6" stroke-linecap="round"></path>
+                            <path d="M127.900116,5.70154 C127.900116,5.70154 117.833046,0.09994 101.613988,0.09994 C85.3949304,0.09994 75.3280599,5.70154 75.3280599,5.70154" id="Stroke-7" stroke="#242A2E" stroke-width="6" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

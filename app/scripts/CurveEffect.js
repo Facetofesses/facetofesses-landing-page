@@ -19,7 +19,7 @@ export default class CurveEffect {
 
   defineGradient () {
     const {width} = this.canvas.getSize()
-    this.gradient = this.context.createLinearGradient(0, 0, width, this.domElement.offsetHeight)
+    this.gradient = this.context.createLinearGradient(0, 0, width, 0)
 
     this.gradient.addColorStop(0, this.colors[0])
     this.gradient.addColorStop(1, this.colors[1])
@@ -41,10 +41,10 @@ export default class CurveEffect {
       x: width,
       y: this.domElementTop + this.domElement.offsetHeight
     }, {
-      x: width / 3 * 2,
+      x: width * 0.666,
       y: this.domElementTop + this.domElement.offsetHeight + moveY
     }, {
-      x: width / 3,
+      x: width * 0.333,
       y: this.domElementTop + this.domElement.offsetHeight - moveY
     }, {
       x: 0,

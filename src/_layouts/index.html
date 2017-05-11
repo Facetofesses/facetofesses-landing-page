@@ -68,13 +68,13 @@ namespace: Home
 </section>
 
 <section class="description container">
-  <div class="row js-curve-effect" data-color-from="#A874DE" data-color-to="#F9A0D6" data-type="down">
-    <div class="col-md-6 hidden-md-down">
+  <div class="row js-curve-effect" data-color-from="#A874DE" data-color-to="#FB474B" data-type="down">
+    <div class="col-md-5 hidden-md-down">
       <figure class="description-image left-image">
         <img src="{{ '/illus-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.first.image_tag }}">
       </figure>
     </div>
-    <div class="description-item col-12 col-md-10 push-md-1 col-lg-6 push-lg-0">
+    <div class="description-item col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-1">
       <h2 class="description-title">{{ page.description.first.title }}</h2>
       <figure class="description-image hidden-lg-up">
         <img src="{{ '/illus-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.first.image_tag }}">
@@ -88,15 +88,18 @@ namespace: Home
     </div>
   </div>
 
-  <div class="row js-curve-effect" data-color-from="#98ADFE" data-color-to="#5195D1" data-type="down">
-    <div class="description-item col-12 col-md-10 push-md-1 col-lg-6 push-lg-0">
+  <div class="row js-curve-effect" data-color-from="#5195D1" data-color-to="#7C52B5" data-type="up">
+    <div class="description-item col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0">
       <h2 class="description-title">{{ page.description.second.title }}</h2>
       <figure class="description-image hidden-lg-up">
         <img src="{{ '/illus-parcours-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.second.image_tag }}">
       </figure>
-      <p class="description-text">{{ page.description.second.text }}</p>
+      <p class="description-text mt-3">{{ page.description.second.text }}</p>
+      <figure class="mt-5">
+        <img src="{{ '/gaia-bubble.svg' | prepend: site.baseurl_image }}" alt="Gaïa : Eh ouai !" class="float-right">
+      </figure>
     </div>
-    <div class="col-md-10 push-md-1 col-lg-6 push-lg-0 hidden-md-down">
+    <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-1 hidden-md-down">
       <figure class="description-image right-image">
         <img src="{{ '/illus-parcours-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.second.image_tag }}">
       </figure>
