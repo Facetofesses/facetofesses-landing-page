@@ -35,6 +35,10 @@ export default class CurveEffect {
 
     if (this.type === 'up') {
       moveY *= -1
+    } else if (this.type === 'down') {
+      moveY *= 1
+    } else {
+      moveY = 0
     }
 
     this.animatedPoints = [{
