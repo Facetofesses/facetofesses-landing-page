@@ -1,6 +1,8 @@
 .about {
   position: relative;
   text-align: center;
+  padding-bottom: 400px;
+  padding-top: 100px;
 
   .js-curve-effect:first-child {
     padding-top: 100px;
@@ -13,15 +15,16 @@
 
   &-title {
     @include title();
-    color: #242A2E;
+    color: #fff;
     text-transform: uppercase;
+    margin-bottom: 20px;
   }
 
   &-text {
     @include text();
-    color: #242A2E;
+    color: #fff;
     max-width: 450px;
-    margin: 0 auto 15px;
+    margin: 0 auto 70px;
   }
 
   &-item {

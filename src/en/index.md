@@ -121,8 +121,7 @@ about:
       - icon: link
         url: "http://remysclippa.com"
 map:
-  title: Let’s get in touch!
-  address: 18 Avenue du Tresum, 74000 Annecy, France
+  title: Here we are!
   image_alt: Where Face to Fesses project is born and is being developed
 social:
   title: Become a fan!

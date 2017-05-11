@@ -284,90 +284,89 @@ namespace: Home
   </div>
 </section>
 
-<section class="about container">
-  <div class="js-curve-effect" data-color-from="#FC6269" data-color-to="#FDA571" data-type="up">
-    <h2 class="about-title">{{ page.about.title }}</h2>
-    <p class="about-text">{{ page.about.text }}</p>
+<section class="about container js-curve-effect" data-color-from="#FC6269" data-color-to="#FDA571" data-type="up">
+  <h2 class="about-title">{{ page.about.title }}</h2>
+  <p class="about-text">{{ page.about.text }}</p>
 
-    <div class="row about-list">
-      {% for p in page.about.people %}
-      <div class="about-item col-6 col-md-3">
-        <figure class="about-item-image">
-          <img src="{{ p.image_src | prepend: site.baseurl_image }}" alt="{{ p.image_alt }}">
-        </figure>
-        <p class="about-item-name">{{ p.name }}</p>
-        <p class="about-item-job">{{ p.job }}</p>
-        <ul class="about-item-social">
-          {% for social in p.social %}
-          <li>
-            <a href="{{ social.url }}" target="_blank">
-              <svg>
-                <use xlink:href="#icon-{{ social.icon }}"></use>
-              </svg>
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endfor %}
+  <div class="row about-list">
+    {% for p in page.about.people %}
+    <div class="about-item col-6 col-md-3">
+      <figure class="about-item-image">
+        <img src="{{ p.image_src | prepend: site.baseurl_image }}" alt="{{ p.image_alt }}">
+      </figure>
+      <p class="about-item-name">{{ p.name }}</p>
+      <p class="about-item-job">{{ p.job }}</p>
+      <ul class="about-item-social">
+        {% for social in p.social %}
+        <li>
+          <a href="{{ social.url }}" target="_blank">
+            <svg>
+              <use xlink:href="#icon-{{ social.icon }}"></use>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-
-
-    <div class="map container">
-      <p class="map-title">{{ page.map.title }}</p>
-      <p class="map-address">{{ page.map.address }}</p>
-
-      <a href="https://goo.gl/maps/jCF4nyViyzA2" target="_blank" class="map-link">
-        <figure class="map-loc">
-          <img src="{{ '/map.png' | prepend: site.baseurl_image }}" alt="{{ page.map.image_alt }}">
-        </figure>
-      </a>
-    </div>
+    {% endfor %}
   </div>
 </section>
 
-<section class="social container js-curve-effect" data-color-from="#5B3B88" data-color-to="#5195D1">
-  <p class="social-title">{{ page.social.title }}</p>
-  <ul class="social-media-list">
-    <li class="social-media-item" id="facebook">
-      <a href="https://www.facebook.com/FaceToFesses/" target="_blank">
-        <svg>
-          <use xlink:href="#icon-facebook"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social-media-item" id="twitter">
-      <a href="https://twitter.com/FaceToFesses" target="_blank">
-        <svg>
-          <use xlink:href="#icon-twitter"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social-media-item" id="mail">
-      <a href="mailto:contact@facetofesses.fr">
-        <svg>
-          <use xlink:href="#icon-mail"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
+<div class="js-curve-effect" data-color-from="#5B3B88" data-color-to="#5195D1">
+  <section class="map container">
+    <p class="map-title">{{ page.map.title }}</p>
+    <p class="map-address">18 Avenue du Tresum <br> 74000 Annecy</p>
 
-  <ul class="social-partners-list">
-    <li class="social-partners-item" id="gobelins">
-      <a href="http://www.gobelins.fr" target="_blank">
-        <svg>
-          <use xlink:href="#icon-gobelins"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social-partners-item" id="cci">
-      <a href="http://www.formation-cci.fr" target="_blank">
-        <svg>
-          <use xlink:href="#icon-cci-formation"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</section>
+    <a href="https://goo.gl/maps/jCF4nyViyzA2" target="_blank" class="map-link">
+      <figure class="map-loc">
+        <img src="{{ '/map.png' | prepend: site.baseurl_image }}" alt="{{ page.map.image_alt }}">
+      </figure>
+    </a>
+  </section>
+
+  <section class="social container">
+    <p class="social-title">{{ page.social.title }}</p>
+    <ul class="social-media-list">
+      <li class="social-media-item" id="facebook">
+        <a href="https://www.facebook.com/FaceToFesses/" target="_blank">
+          <svg>
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-media-item" id="twitter">
+        <a href="https://twitter.com/FaceToFesses" target="_blank">
+          <svg>
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-media-item" id="mail">
+        <a href="mailto:contact@facetofesses.fr">
+          <svg>
+            <use xlink:href="#icon-mail"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="social-partners-list">
+      <li class="social-partners-item" id="gobelins">
+        <a href="http://www.gobelins.fr" target="_blank">
+          <svg>
+            <use xlink:href="#icon-gobelins"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-partners-item" id="cci">
+        <a href="http://www.formation-cci.fr" target="_blank">
+          <svg>
+            <use xlink:href="#icon-cci-formation"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
 
 <canvas id="canvas"></canvas>
