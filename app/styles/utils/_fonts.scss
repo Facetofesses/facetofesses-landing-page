@@ -12,6 +12,34 @@
   url('../fonts/blogger_sans-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
+@font-face {
+  font-family: 'Reklame Script';
+  src: url('../fonts/ReklameScript-Regular.woff2') format('woff2'),
+  url('../fonts/ReklameScript-Regular.woff') format('woff'),
+  url('../fonts/ReklameScript-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reklame Script';
+  src: url('../fonts/ReklameScript-Medium.woff2') format('woff2'),
+  url('../fonts/ReklameScript-Medium.woff') format('woff'),
+  url('../fonts/ReklameScript-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reklame Script';
+  src: url('../fonts/ReklameScript-Bold.woff2') format('woff2'),
+  url('../fonts/ReklameScript-Bold.woff') format('woff'),
+  url('../fonts/ReklameScript-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 @mixin sourceFont() {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -25,6 +53,9 @@
   font-weight: bold;
 }
 
+@mixin reklameScript() {
+  font-family: "Reklame Script", sans-serif;
+}
 
 .c-black {
   color: #000 !important;
