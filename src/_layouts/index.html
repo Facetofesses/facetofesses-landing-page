@@ -44,19 +44,31 @@ namespace: Home
   </div>
 </section>
 
-<section class="promise container js-curve-effect" data-color-from="#FFFFFF" data-color-to="#FFFFFF" data-type="down">
+<section class="promise container js-curve-effect" data-color-from="#242A2E" data-color-to="#242A2E" data-type="up">
   <div class="row">
-    <div class="col-12 col-sm-8 push-sm-4">
+    <div class="col-12 col-sm-7">
       <p class="promise-text">{{ page.promise.text }}</p>
-      <div class="promise-link-wrapper">
-        <p class="promise-link">{{ page.promise.link }}</p>
-      </div>
+      <p class="promise-link">{{ page.promise.link }}</p>
+    </div>
+    <div class="col-12 col-sm-5 promise-colab">
+      <h4 class="promise-colab-title">En collaboration avec</h4>
+      <h3 class="promise-colab-subtitle">Priscilla Coutin</h3>
+      <p class="promise-colab-text">Psychologue - Sexologue</p>
+      <ul class="about-item-social">
+        <li>
+          <a href="http://priscillacoutin-psychologue.fr" target="_blank">
+            <svg>
+              <use xlink:href="#icon-link"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
 <section class="description container">
-  <div class="row js-curve-effect" data-color-from="#A874DE" data-color-to="#F9A0D6" data-type="up">
+  <div class="row js-curve-effect" data-color-from="#A874DE" data-color-to="#F9A0D6" data-type="down">
     <div class="col-md-6 hidden-md-down">
       <figure class="description-image left-image">
         <img src="{{ '/illus-bus.svg' | prepend: site.baseurl_image }}" alt="{{ page.description.first.image_tag }}">
@@ -265,7 +277,7 @@ namespace: Home
         </div>
       </div>
     </div>
-
+  </div>
 </section>
 
 <section class="about container">

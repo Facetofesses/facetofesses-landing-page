@@ -5,21 +5,42 @@
 
   &-text {
     @include title();
+    color: #fff;
+    margin-bottom: 20px;
   }
 
   &-link {
     @include link();
+    color: #fff;
     display: inline;
-    box-shadow: inset 0 -10px 0 0 #FDCDF2, 0 5px 0 0 #FDCDF2;
+    box-shadow: inset 0 -10px 0 0 #5B6478, 0 5px 0 0 #5B6478;
 
     @include breakpoint-medium() {
-      box-shadow: inset 0 -15px 0 0 #FDCDF2;
+      box-shadow: inset 0 -15px 0 0 #5B6478;
+    }
+  }
+
+  &-colab {
+    margin-top: 30px;
+
+    &-title {
+      @include reklameScript();
+      transform: rotate(-5deg);
+      font-size: 34px;
+      color: #6FC2EF;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
     }
 
-    &-wrapper {
-      @include breakpoint-medium() {
-        padding: 0 90px;
-      }
+    &-subtitle {
+      @include link();
+      color: #fff;
+    }
+
+    &-text {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      color: #fff;
     }
   }
 }
