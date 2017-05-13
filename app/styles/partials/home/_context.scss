@@ -2,8 +2,7 @@
 
   &-item {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 
     @include breakpoint-medium() {
       padding: 100px 50px;
@@ -17,6 +16,18 @@
     &-icon {
       width: 200px;
       fill: #A874DE;
+
+      &--right {
+        @include breakpoint-small() {
+          float: right;
+        }
+      }
+
+      &--left {
+        @include breakpoint-small() {
+          float: left;
+        }
+      }
     }
   }
 }
