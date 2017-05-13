@@ -19,15 +19,17 @@ namespace: Home
 </header>
 
 <section class="context container">
-  <div class="row js-curve-effect" data-color-from="#7C52B5" data-color-to="#7C52B5" data-type="down">
+  <div class="js-curve-effect" data-color-from="#7C52B5" data-color-to="#7C52B5" data-type="down">
     <div class="row">
-      <div class="context-item col-12 col-sm-10 col-md-8 col-lg-7 offset-lg-1">
-        <svg class="context-item-icon mr-3 float-left"><use xlink:href="#icon-picto-college"></use></svg>
-        <p class="context-item-text">{{ page.context.first }}</p>
+      <div class="col-12 col-sm-10 col-md-8 col-lg-7 offset-lg-1">
+        <div class="context-item">
+          <svg class="context-item-icon context-item-icon--left mr-3"><use xlink:href="#icon-picto-college"></use></svg>
+          <p class="context-item-text">{{ page.context.first }}</p>
+        </div>
       </div>
     </div>
 
-    <div class="row w-100">
+    <div class="row">
       <div class="col-md-10 offset-md-1">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe width="1080" height="720" src="https://www.youtube.com/embed/y13HO1C-LtI" frameborder="0" allowfullscreen></iframe>
@@ -36,9 +38,11 @@ namespace: Home
     </div>
 
     <div class="row">
-      <div class="context-item col-12 col-sm-10 offset-sm-2 col-md-8 offset-md-4 col-lg-7 offset-lg-4">
-        <svg class="context-item-icon ml-3 float-right"><use xlink:href="#icon-picto-bus"></use></svg>
-        <p class="context-item-text">{{ page.context.second }}</p>
+      <div class="col-12 col-sm-10 offset-sm-2 col-md-8 offset-md-4 col-lg-7 offset-lg-4">
+        <div class="context-item">
+          <svg class="context-item-icon context-item-icon--right ml-3"><use xlink:href="#icon-picto-bus"></use></svg>
+          <p class="context-item-text">{{ page.context.second }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -109,14 +113,14 @@ namespace: Home
 
 <section class="interactions container">
   <div class="js-curve-effect" data-color-from="#242A2E" data-color-to="#242A2E" data-type="up">
-    <h2 class="interactions-title">{{ page.interactions.title }}</h2>
+    <h2 class="interactions-title">{{ page.interactions.title }} <span class="interactions-title-sub">Et bien plus encore..</span></h2>
 
     <div class="row">
       <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
         <p class="interaction-item-title">{{ page.interactions.first.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.first.text }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg>
             <use xlink:href="#icon-thumbs"></use>
           </svg>
@@ -140,7 +144,7 @@ namespace: Home
         <p class="interaction-item-title">{{ page.interactions.second.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.second.text }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg>
             <use xlink:href="#icon-thumbs"></use>
           </svg>
@@ -158,7 +162,7 @@ namespace: Home
         <p class="interaction-item-title">{{ page.interactions.third.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.third.text }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg>
             <use xlink:href="#icon-thumbs"></use>
           </svg>
@@ -180,11 +184,11 @@ namespace: Home
       <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
         <img class="interaction-path-img" src="{{ '/sperm-4.png' | prepend: site.baseurl_image }}" alt="">
       </div>
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+      <div class="interaction-item interaction-item--light col-12 col-sm-10 col-md-6 col-lg-5">
         <p class="interaction-item-title">{{ page.interactions.fourth.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.fourth.text }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg class="is-white">
             <use xlink:href="#icon-thumbs"></use>
           </svg>
@@ -198,11 +202,11 @@ namespace: Home
     </div>
 
     <div class="row">
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+      <div class="interaction-item interaction-item--light col-12 col-sm-10 col-md-6 col-lg-5">
         <p class="interaction-item-title">{{ page.interactions.fifth.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.fifth.text }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg class="is-white">
             <use xlink:href="#icon-thumbs"></use>
           </svg>
@@ -229,7 +233,7 @@ namespace: Home
         <p class="interaction-item-text">{{ page.interactions.sixth.text }}</p>
         <p class="interaction-item-text">{{ page.interactions.sixth.text_second }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg>
             <use xlink:href="#icon-thumbs"></use>
           </svg>
@@ -247,7 +251,7 @@ namespace: Home
         <p class="interaction-item-title">{{ page.interactions.seventh.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.seventh.text }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg>
             <use xlink:href="#icon-thumbs"></use>
           </svg>
@@ -269,7 +273,7 @@ namespace: Home
         <p class="interaction-item-title">{{ page.interactions.eighth.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.eighth.text }}</p>
         <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }} :</p>
+          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
           <svg>
             <use xlink:href="#icon-thumbs"></use>
           </svg>

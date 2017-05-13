@@ -13,10 +13,30 @@
   }
 
   &-title {
-    @include big-title();
+    @include reklameScript();
+    font-size: 45px;
+    transform: rotate(-5deg);
     text-align: center;
     margin-bottom: 40px;
-    color: #242A2E;
+    color: #fff;
+
+    &-sub {
+      @include sourceFont();
+      display: block;
+      font-size: 23px;
+      font-weight: 500;
+      transform: translateX(30px);
+    }
+
+
+    @include breakpoint-small() {
+      font-size: 75px;
+
+      &-sub {
+        font-size: 30px;
+        transform: translateX(150px);
+      }
+    }
   }
 
 
@@ -61,40 +81,39 @@
     &-title {
       @include title();
       margin-bottom: 10px;
-      text-align: center;
-
-      @include breakpoint-xsmall() {
-        text-align: left;
-      }
+      color: #fff;
     }
 
     &-text {
       @include text();
-      text-align: center;
       margin-bottom: 20px;
-      color: #242A2E;
-
-      @include breakpoint-xsmall() {
-        text-align: left;
-      }
+      color: #fff;
     }
 
     &-benefice {
       @include text();
       margin-bottom: 5px;
-      color: #242A2E;
+      color: #fff;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border: 2px solid #5B6478;
+        margin-right: 8px;
+      }
 
       &-wrapper {
         position: relative;
-        padding-left: 40px;
 
         svg {
-          position: absolute;
-          top: -4px;
-          left: -10px;
+          display: none;
           fill: #4bd1a4;
           width: 40px;
           height: 40px;
+          vertical-align: text-bottom;
 
           &.is-white,
           &.is-white svg {
@@ -103,30 +122,39 @@
         }
 
         @include breakpoint-small() {
-          padding-left: 0;
 
           svg {
-            top: -25px;
-            left: -55px;
-            width: 40px;
-            height: 50px;
+            display: inline-block;
           }
         }
       }
 
       &-pre {
         position: relative;
-        @include sourceFont();
-        font-size: 18px;
-        color: #242A2E;
+        @include reklameScript();
+        font-size: 30px;
+        color: #fff;
         letter-spacing: 1.5px;
-        line-height: 20px;
-        text-transform: uppercase;
+        line-height: 30px;
         margin-bottom: 10px;
+        display: inline-block;
+        margin-right: 13px;
       }
 
       &-list {
         padding: 5px 0;
+      }
+    }
+
+    &--light {
+      .interaction-item-title,
+      .interaction-item-text,
+      .interaction-item-benefice,
+      .interaction-item-benefice-pre {
+        color: #242A2E;
+      }
+      .interaction-item-benefice:before {
+        border-color: #fff;
       }
     }
   }
