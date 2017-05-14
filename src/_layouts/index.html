@@ -12,7 +12,7 @@ namespace: Home
   <h1 class="header-title">
     <span class="header-title-first">{% if page.lang == 'fr' %}Et si l’éducation sexuelle{% else %}What if sexual education{% endif %}</span>
     <span class="header-title-second">{% if page.lang == 'fr' %}était{% else %}was{% endif %} <span class="header-title-big">fun</span> {% if page.lang == 'fr' %}et{% else %}and{% endif %}</span>
-    <span class="header-title-third header-title-big">interactive ?</span>
+    <span class="header-title-third header-title-big">{% if page.lang == 'fr' %}interactive ?{% else %}interactive?{% endif %}</span>
   </h1>
 
   <a class="header-scroll" href="#">
@@ -123,31 +123,39 @@ namespace: Home
     <h2 class="interactions-title">{{ page.interactions.title }} <span class="interactions-title-sub">{{ page.interactions.subtitle }}</span></h2>
 
     <div class="row">
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
-        <p class="interaction-item-title">{{ page.interactions.first.title }}</p>
-        <p class="interaction-item-text">{{ page.interactions.first.text }}</p>
-        <div class="interaction-item-benefice-wrapper">
-          <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
-          <svg>
-            <use xlink:href="#icon-thumbs"></use>
-          </svg>
-          <ul class="interaction-item-benefice-list">
-            {% for benefice in page.interactions.first.benefices %}
+      <div class="col-12 col-sm-5 col-lg-3">
+        <img class="interaction-illu interaction-illu-1" src="{{ '/workshops/workshop-01.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item col-12 col-sm-7 col-lg-5 p-none">
+        <div class="interaction-black-box">
+          <p class="interaction-item-title">{{ page.interactions.first.title }}</p>
+          <p class="interaction-item-text">{{ page.interactions.first.text }}</p>
+          <div class="interaction-item-benefice-wrapper">
+            <p class="interaction-item-benefice-pre">{{ site.data.translations[page.lang].benefice }}</p>
+            <svg>
+              <use xlink:href="#icon-thumbs"></use>
+            </svg>
+            <ul class="interaction-item-benefice-list">
+              {% for benefice in page.interactions.first.benefices %}
               <li class="interaction-item-benefice">{{ benefice }}</li>
-            {% endfor %}
-          </ul>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
-        <img class="interaction-path-img l-0" src="{{ '/sperm-1.png' | prepend: site.baseurl_image }}" alt="">
+      <div class="interaction-path col-sm-4 col-md-6 col-lg-4 hidden-md-down">
+        <img class="interaction-path-img interaction-path-img-bottom l-0" src="{{ '/workshops/sperm-1.png' | prepend: site.baseurl_image }}" alt="">
       </div>
     </div>
 
-    <div class="row">
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-5 hidden-sm-down">
-        <img class="interaction-path-img interaction-path-img-top" src="{{ '/sperm-2.png' | prepend: site.baseurl_image }}" alt="">
+    <div class="row align-items-center mt-3">
+      <div class="interaction-path col-lg-3 hidden-md-down">
+        <img class="interaction-path-img interaction-path-img-xtop" src="{{ '/workshops/sperm-2.png' | prepend: site.baseurl_image }}" alt="">
       </div>
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+      <div class="col-12 col-sm-5 col-lg-4">
+        <img class="interaction-illu" src="{{ '/workshops/workshop-02.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item interaction-item-2 col-12 col-sm-7 col-lg-5">
         <p class="interaction-item-title">{{ page.interactions.second.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.second.text }}</p>
         <div class="interaction-item-benefice-wrapper">
@@ -164,8 +172,12 @@ namespace: Home
       </div>
     </div>
 
-    <div class="row">
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+    <div class="row align-items-center mt-5">
+      <div class="interaction-path interaction-path-padd col-sm-5 col-lg-4 push-lg-5">
+        <img class="interaction-illu interaction-illu-mb-3" src="{{ '/workshops/workshop-03.png' | prepend: site.baseurl_image }}" alt="">
+        <img class="interaction-path-img interaction-path-img-xbottom hidden-md-down" src="{{ '/workshops/sperm-3.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item col-12 col-sm-7 col-lg-5 pull-lg-4">
         <p class="interaction-item-title">{{ page.interactions.third.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.third.text }}</p>
         <div class="interaction-item-benefice-wrapper">
@@ -180,18 +192,21 @@ namespace: Home
           </ul>
         </div>
       </div>
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
-        <img class="interaction-path-img interaction-path-img-top" src="{{ '/sperm-3.png' | prepend: site.baseurl_image }}" alt="">
-      </div>
+      <div class="col-lg-3"></div>
     </div>
   </div>
 
   <div class="js-curve-effect" data-color-from="#4BD1A4" data-color-to="#4BD1A4" data-type="down">
-    <div class="row">
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
-        <img class="interaction-path-img" src="{{ '/sperm-4.png' | prepend: site.baseurl_image }}" alt="">
+
+
+    <div class="row align-items-center mt-3">
+      <div class="interaction-path col-lg-3 hidden-md-down">
+        <img class="interaction-path-img interaction-path-img-xtop" src="{{ '/workshops/sperm-4.png' | prepend: site.baseurl_image }}" alt="">
       </div>
-      <div class="interaction-item interaction-item--light col-12 col-sm-10 col-md-6 col-lg-5">
+      <div class="col-12 col-sm-5 col-lg-4">
+        <img class="interaction-illu" src="{{ '/workshops/workshop-04.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item interaction-item--light col-12 col-sm-7 col-lg-5">
         <p class="interaction-item-title">{{ page.interactions.fourth.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.fourth.text }}</p>
         <div class="interaction-item-benefice-wrapper">
@@ -208,8 +223,12 @@ namespace: Home
       </div>
     </div>
 
-    <div class="row">
-      <div class="interaction-item interaction-item--light col-12 col-sm-10 col-md-6 col-lg-5">
+    <div class="row align-items-center mt-5">
+      <div class="interaction-path interaction-path-padd col-sm-5 col-lg-4 push-lg-5">
+        <img class="interaction-illu interaction-illu-mb-3" src="{{ '/workshops/workshop-05.png' | prepend: site.baseurl_image }}" alt="">
+        <img class="interaction-path-img interaction-path-img-bottom-left hidden-md-down" src="{{ '/workshops/sperm-5.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item interaction-item--light col-12 col-sm-7 col-lg-5 pull-lg-4">
         <p class="interaction-item-title">{{ page.interactions.fifth.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.fifth.text }}</p>
         <div class="interaction-item-benefice-wrapper">
@@ -224,18 +243,17 @@ namespace: Home
           </ul>
         </div>
       </div>
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
-        <img class="interaction-path-img interaction-path-img-top" src="{{ '/sperm-5.png' | prepend: site.baseurl_image }}" alt="">
-      </div>
+      <div class="col-lg-3"></div>
     </div>
   </div>
 
   <div class="js-curve-effect" data-color-from="#242A2E" data-color-to="#242A2E" data-type="down">
-    <div class="row">
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-5 hidden-sm-down">
-        <img class="interaction-path-img" src="{{ '/sperm-2.png' | prepend: site.baseurl_image }}" alt="">
+    <div class="row align-items-center">
+      <div class="interaction-path interaction-path-xpadd col-12 col-sm-5 col-lg-4 mb-3 text-right">
+        <img class="interaction-illu interaction-illu-mb-3" src="{{ '/workshops/workshop-06.png' | prepend: site.baseurl_image }}" alt="">
+        <img class="interaction-path-img interaction-path-img-mdbottom hidden-md-down" src="{{ '/workshops/sperm-6.png' | prepend: site.baseurl_image }}" alt="">
       </div>
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+      <div class="interaction-item col-12 col-sm-7 col-lg-5">
         <p class="interaction-item-title">{{ page.interactions.sixth.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.sixth.text }}</p>
         <p class="interaction-item-text">{{ page.interactions.sixth.text_second }}</p>
@@ -253,8 +271,11 @@ namespace: Home
       </div>
     </div>
 
-    <div class="row">
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-5 col-lg-4 push-lg-5">
+        <img class="interaction-illu interaction-illu-mb-3" src="{{ '/workshops/workshop-07.png' | prepend: site.baseurl_image }}" alt="">
+      </div>
+      <div class="interaction-item col-12 col-sm-7 col-lg-5 pull-lg-4">
         <p class="interaction-item-title">{{ page.interactions.seventh.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.seventh.text }}</p>
         <div class="interaction-item-benefice-wrapper">
@@ -269,14 +290,13 @@ namespace: Home
           </ul>
         </div>
       </div>
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down">
-        <img class="interaction-path-img" src="{{ '/sperm-7.png' | prepend: site.baseurl_image }}" alt="">
+      <div class="interaction-path col-sm-4 col-md-6 col-lg-3 hidden-md-down">
+        <img class="interaction-path-img interaction-path-img-top" src="{{ '/workshops/sperm-7.png' | prepend: site.baseurl_image }}" alt="">
       </div>
     </div>
 
-    <div class="row">
-      <div class="interaction-path col-sm-4 col-md-6 col-lg-7 hidden-sm-down"></div>
-      <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">
+    <div class="row mt-5 mb-3">
+      <div class="interaction-item col-12 col-sm-7 col-lg-5">
         <p class="interaction-item-title">{{ page.interactions.eighth.title }}</p>
         <p class="interaction-item-text">{{ page.interactions.eighth.text }}</p>
         <div class="interaction-item-benefice-wrapper">
