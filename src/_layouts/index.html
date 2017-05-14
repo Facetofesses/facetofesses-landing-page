@@ -59,9 +59,9 @@ namespace: Home
       <p class="promise-link">{{ page.promise.link }}</p>
     </div>
     <div class="col-12 col-sm-5 promise-colab">
-      <h4 class="promise-colab-title">En collaboration avec</h4>
+      <h4 class="promise-colab-title">{{ page.promise.collab.title }}</h4>
       <h3 class="promise-colab-subtitle">Priscilla Coutin</h3>
-      <p class="promise-colab-text">Psychologue - Sexologue</p>
+      <p class="promise-colab-text">{{ page.promise.collab.role }}</p>
       <ul class="about-item-social">
         <li>
           <a href="http://priscillacoutin-psychologue.fr" target="_blank">
@@ -120,7 +120,7 @@ namespace: Home
 
 <section class="interactions container">
   <div class="js-curve-effect" data-color-from="#242A2E" data-color-to="#242A2E" data-type="up">
-    <h2 class="interactions-title">{{ page.interactions.title }} <span class="interactions-title-sub">Et bien plus encore..</span></h2>
+    <h2 class="interactions-title">{{ page.interactions.title }} <span class="interactions-title-sub">{{ page.interactions.subtitle }}</span></h2>
 
     <div class="row">
       <div class="interaction-item col-12 col-sm-10 col-md-6 col-lg-5">

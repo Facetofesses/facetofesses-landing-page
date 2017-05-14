@@ -10,6 +10,9 @@ context:
 promise:
   text: Face to Fesses accompagne les adolescents dans la découverte de leur sexualité 
   link: grâce à un parcours interactif qui démystifie la première fois !
+  collab:
+    title: En collaboration avec
+    role: Psychologue - Sexologue
 description: 
   first:
     title: Une exposition interactive, itinérante et personnalisée
@@ -31,6 +34,7 @@ description:
     text: Le parcours s’effectue en compagnie de Gaïa, la mascotte numérique de Face to Fesses, une sorte de grande soeur bienveillante. Sa voix décomplexée, enjouée et taquine accompagne l’adolescent et lui apporte un complément d’information, toujours avec humour.
 interactions:
   title: Le parcours
+  subtitle: Et bien plus encore...
   first:
     title: Hey toi, là-bas !
     text: Lorsqu’un adolescent passe devant le bus, il est interpellé par Gaïa qui est présente sur un grand écran à l’extérieur du bus. Elle lui pose une question sur la première fois et l’invite à pénétrer à l’intérieur.

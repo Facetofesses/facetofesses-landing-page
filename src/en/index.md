@@ -10,6 +10,9 @@ context:
 promise:
   text: Face to Fesses helps teenagers to discover&nbsp;their sexuality 
   link: through an interactive experience that demystifies the first time!
+  collab:
+    title: In collaboration with
+    role: Psychologist - Sexologist
 description: 
   first:
     title: An itinerant, interactive and customized exhibition
@@ -31,6 +34,7 @@ description:
     text: Gaïa, Face to Fesses’ virtual mascot, accompanies the user through the path. She is like a kind big sister. Her joyful and cheeky voice follows the teenager and gives him information with humour.
 interactions:
   title: The path
+  subtitle: And way more...
   first:
     title: Hey you, there!
     text: When someone walks in front of the bus, Gaïa appears on the huge bus’ screen and calls after this person. Then she asks a question about the first sex experience and invites the person to enter the bus.
@@ -104,7 +108,7 @@ about:
       - icon: link
         url: "http://www.quentinneyraud.fr"
     - name: Jade Impedovo
-      job: Conceptor
+      job: Designer
       image_src: "/jade.jpg"
       image_alt: Jade's profile picture
       social: 
