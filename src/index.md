@@ -18,10 +18,13 @@ description:
     values:
       - value: 1
         label: bus
+        icon: bus
       - value: 1
         label: an
+        icon: calendar
       - value: 1
         label: ville/semaine
+        icon: localization
   second:
     title: Un parcours narratif complet
     image_alt: Illustration du parcours du bus

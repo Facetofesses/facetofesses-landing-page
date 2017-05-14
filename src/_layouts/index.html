@@ -89,7 +89,10 @@ namespace: Home
       </figure>
       <ul class="description-list">
         {% for v in page.description.first.values %}
-        <li class="description-list-item"><span>{{ v.value }}</span>{{ v.label }}</li>
+        <li class="description-list-item">
+          <svg><use xlink:href="#icon-exposition-{{ v.icon }}"></use></svg>
+          <div><span>{{ v.value }}</span>{{ v.label }}</div>
+        </li>
         {% endfor %}
       </ul>
       <p class="description-text">{{ page.description.first.text }}</p>

@@ -18,10 +18,13 @@ description:
     values:
       - value: 1
         label: bus
+        icon: bus
       - value: 1
         label: year
+        icon: calendar
       - value: 1
         label: town/week
+        icon: localization
   second:
     title: A full narrative path
     image_alt: Bus path illustration
