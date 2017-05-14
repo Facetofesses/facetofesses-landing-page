@@ -64,35 +64,33 @@
 
 @mixin big-title() {
   @include bloggerSansBold();
-  font-size: 28px;
+  font-size: 19px;
   color: #FFFFFF;
-  letter-spacing: 6px;
-  line-height: 36px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  line-height: 1.5em;
 
   @include breakpoint-xsmall() {
-    font-size: 32px;
-    line-height: 40px;
+    @include sourceFont();
+    line-height: 1.9em;
+    letter-spacing: 6px;
+    font-size: 26px;
   }
 
   @include breakpoint-small() {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 34px;
   }
 
   @include breakpoint-medium() {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 38px;
   }
 
   @include breakpoint-large() {
-    font-size: 44px;
-    line-height: 52px;
+    font-size: 42px;
   }
 
   @include breakpoint-xlarge() {
-    font-size: 50px;
-    line-height: 56px;
+    font-size: 44px;
   }
 }
 

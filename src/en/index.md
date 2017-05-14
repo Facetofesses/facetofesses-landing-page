@@ -4,8 +4,6 @@ namespace: Home
 permalink: 'en/'
 lang: 'en'
 meta_description: ~
-header:
-  title: 'What if sex ed was fun and interactive?'
 context:
   first: Sexual education in french high schools is boring, incomplete and obsolete in the world we live today. A world where sexuality is exacerbated and teens are on average faced their first porn at 11 years old.
   second: Face to Fesses' approach tackles in a concrete and entertaining way, first sex mysteries, without taboos! This is the subject that most concerns teenagers and we wish to help them to approach their sex life serenely.

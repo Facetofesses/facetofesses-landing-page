@@ -54,7 +54,7 @@ export default class App {
     this.events.push(FONTS_READY_EVENT)
     WebFont.load({
       google: {
-        families: ['Source Sans Pro:400']
+        families: ['Source Sans Pro:300,400']
       },
       custom: {
         families: ['Blogger Sans']

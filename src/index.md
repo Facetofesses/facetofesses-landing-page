@@ -4,8 +4,6 @@ namespace: Home
 permalink: '/'
 lang: 'fr'
 meta_description: ~
-header:
-  title: 'Et si l’éducation sexuelle était fun et interactive&nbsp;?'
 context:
   first: L’éducation sexuelle, telle que proposée dans les collèges et lycées francais, est barbante, incomplète et désuète face au monde dans lequel nous vivons aujourd’hui. Un monde où la sexualité est exacerbée et les adolescents sont en moyenne confrontés à leur première image pornographique à 11 ans !
   second: L'expérience Face to Fesses aborde de manière concrète et sans tabou les mystères du premier rapport sexuel, sous le prisme du plaisir et du respect. C’est le sujet qui préoccupe le plus les ados et nous souhaitons leur permettre d’aborder sereinement leur vie sexuelle.

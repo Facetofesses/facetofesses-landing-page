@@ -9,7 +9,11 @@ namespace: Home
       <use xlink:href="#icon-logo"></use>
     </svg>
   </div>
-  <h1 class="header-title">{{ page.header.title }}</h1>
+  <h1 class="header-title">
+    <span class="header-title-first">{% if page.lang == 'fr' %}Et si l’éducation sexuelle{% else %}What if sexual education{% endif %}</span>
+    <span class="header-title-second">{% if page.lang == 'fr' %}était{% else %}was{% endif %} <span class="header-title-big">fun</span> {% if page.lang == 'fr' %}et{% else %}and{% endif %}</span>
+    <span class="header-title-third header-title-big">interactive ?</span>
+  </h1>
 
   <a class="header-scroll" href="#">
     <svg>
