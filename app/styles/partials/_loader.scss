@@ -18,31 +18,16 @@
     height: 20px;
     border-radius: 50%;
     transform-origin: 40px 50%;
+    background-color: #fff;
 
-    animation: bubble-animation 4s infinite;
-
-    &:nth-child(1) {
-      background-color: #5B3B88;
-    }
+    animation: bubble-animation 3s infinite;
 
     &:nth-child(2) {
-      background-color: #37A579;
       animation-delay: 1s;
     }
 
     &:nth-child(3) {
-      background-color: #EB76AB;
       animation-delay: 2s;
-    }
-
-    &:nth-child(4) {
-      background-color: #FFF870;
-      animation-delay: 3s;
-    }
-
-    &:nth-child(5) {
-      background-color: #FDA571;
-      animation-delay: 4s;
     }
   }
 }
@@ -53,11 +38,11 @@
     transform: rotate(0deg) scale(1);
   }
 
-  35% {
+  50% {
     transform: rotate(180deg) scale(2);
   }
 
-  70%, 100% {
+  100% {
     transform: rotate(360deg) scale(1);
   }
 }
