@@ -11,7 +11,7 @@ promise:
   text: Face to Fesses accompagne les adolescents dans la découverte de leur sexualité 
   link: grâce à un parcours interactif qui démystifie la première fois !
   collab:
-    title: En collaboration avec
+    title: Avec l'expertise de
     role: Psychologue - Sexologue
 description: 
   first:
